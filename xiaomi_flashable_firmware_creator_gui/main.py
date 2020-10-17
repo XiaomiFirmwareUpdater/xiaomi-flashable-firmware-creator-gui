@@ -521,21 +521,33 @@ class MainWindowUi(QMainWindow):
         self.status_box.setText(f"Unzipping MIUI... ({firmware_creator.type}) device")
         self.progress_bar.setValue(20)
         logging.info(f'Unzipping {self.filename}')
-        firmware_creator.extract()
-        self.progress_bar.setValue(45)
-        self.status_box.setText("Generating updater-script...")
-        self.progress_bar.setValue(55)
-        logging.info(f'Creating updater-script')
-        firmware_creator.generate_updater_script()
-        self.status_box.setText("Creating zip..")
-        self.progress_bar.setValue(75)
-        logging.info(f'Creating output zip')
-        new_zip = firmware_creator.make_zip()
-        firmware_creator.cleanup()
-        firmware_creator.close()
-        self.status_box.setText(f"All Done! Output zip is {new_zip}")
-        self.progress_bar.setValue(100)
-        logging.info(f'Done')
+        extracted = False
+        try:
+            firmware_creator.extract()
+            extracted = True
+        except RuntimeError as err:
+            if str(err) == "Nothing found to extract!":
+                self.status_box.setText("Error: Unsupported operation for MTK!")
+                logging.warning(f'Unsupported operation for MTK')
+                firmware_creator.close()
+                self.progress_bar.setValue(100)
+            else:
+                raise err
+        if extracted:
+            self.progress_bar.setValue(45)
+            self.status_box.setText("Generating updater-script...")
+            self.progress_bar.setValue(55)
+            logging.info(f'Creating updater-script')
+            firmware_creator.generate_updater_script()
+            self.status_box.setText("Creating zip..")
+            self.progress_bar.setValue(75)
+            logging.info(f'Creating output zip')
+            new_zip = firmware_creator.make_zip()
+            firmware_creator.cleanup()
+            firmware_creator.close()
+            self.status_box.setText(f"All Done! Output zip is {new_zip}")
+            self.progress_bar.setValue(100)
+            logging.info(f'Done')
 
     @staticmethod
     def open_link(link):
