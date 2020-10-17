@@ -27,6 +27,7 @@ It supports creating untouched firmware, non-arb firmware, firmware + vendor fla
 
 ### Installation
 
+**Using pip**
 You can simply install this tool using Python pip.
 
 ```shell script
@@ -35,7 +36,7 @@ pip install xiaomi_flashable_firmware_creator_gui
 
 **Manual Installation**
 
-*   Clone this repo using `git clone --recursive`
+*   Clone this repo using `git clone`
 *   Make sure that you have Python3 installed on your device.
 *   Install the required packages.
 
@@ -48,5 +49,5 @@ pip3 install -r requirements.txt
 *   Run the tool.
 
 ```shell script
-python3 -m xiaomi_flashable_firmware_creator_gui
+xiaomi_flashable_firmware_creator_gui
 ```
