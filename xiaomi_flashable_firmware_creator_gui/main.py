@@ -5,17 +5,17 @@
 
 import logging
 import sys
+from pathlib import Path
 
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtCore import QMimeDatabase, QUrl
-from PyQt5.QtWidgets import QApplication, QMainWindow, QDesktopWidget, qApp, QFileDialog, QGroupBox
 from PyQt5.QtGui import QIcon, QDesktopServices
+from PyQt5.QtWidgets import QApplication, QMainWindow, QDesktopWidget, qApp, QFileDialog, QGroupBox
 
+from xiaomi_flashable_firmware_creator.firmware_creator import FlashableFirmwareCreator
 from xiaomi_flashable_firmware_creator_gui import current_dir
 from xiaomi_flashable_firmware_creator_gui.about import AboutBox
 from xiaomi_flashable_firmware_creator_gui.helpers.settings import load_settings, update_settings
-import xiaomi_flashable_firmware_creator_gui.cli.xiaomi_flashable_firmware_creator. \
-    xiaomi_flashable_firmware_creator as cf
 
 logging.basicConfig(filename=f'{current_dir}/data/last_run.log', filemode='w',
                     format='(%(asctime)s) - %(name)s - %(levelname)s - %(message)s',
@@ -61,7 +61,7 @@ class MainWindowUi(QMainWindow):
     """Main Window"""
 
     def __init__(self, lang, translator):
-        super(MainWindowUi, self).__init__()
+        super().__init__()
         # Init
         self.lang = lang
         self.translator = translator
@@ -117,7 +117,7 @@ class MainWindowUi(QMainWindow):
         self.action_report_bug = QtWidgets.QAction(self)
         self.action_website = QtWidgets.QAction(self)
         # vars
-        self.filepath = ''
+        self.filepath = Path()
         self.filename = ''
         # other windows
         self.about_box = AboutBox()
@@ -477,12 +477,12 @@ class MainWindowUi(QMainWindow):
         """
         dialog = QFileDialog()
         filepath = dialog.getOpenFileName(self, 'Select MIUI zip',
-                                          '', "MIUI zip files (miui*.zip)")[0]
+                                          '', "MIUI zip files (*.zip)")[0]
         if not filepath:
             self.status_box.setText(f"Please select a file!")
             return
-        self.filepath = filepath
-        self.filename = filepath.split('/')[-1]
+        self.filepath = Path(filepath).absolute()
+        self.filename = self.filepath.name
         self.status_box.setText(f"File {self.filename} is selected")
         logging.info(f'File {self.filename} is selected')
 
@@ -510,87 +510,30 @@ class MainWindowUi(QMainWindow):
         elif checked_radiobutton == 'Firmware-less ROM':
             process = 'firmwareless'
         self.status_box.setText(f"Starting {process} job")
+        firmware_creator = FlashableFirmwareCreator(str(self.filepath),
+                                                    process, self.filepath.parent)
         self.progress_bar.setValue(1)
-        cf.init()
         logging.info(f'Starting extract job')
         self.progress_bar.setValue(5)
-        fw_type = cf.firmware_type(self.filepath)
-        self.status_box.setText(f"Detected {fw_type} device")
-        logging.info(f'Detected {fw_type} device')
+        self.status_box.setText(f"Detected {firmware_creator.type} device")
+        logging.info(f'Detected {type} device')
         self.progress_bar.setValue(10)
-        if fw_type == 'qcom':
-            if process == "firmware":
-                self.status_box.setText(f"Unzipping MIUI... ({fw_type}) device")
-                self.progress_bar.setValue(30)
-                logging.info(f'Unzipping {self.filename}')
-                cf.firmware_extract(self.filepath, process)
-                self.progress_bar.setValue(45)
-                self.status_box.setText("Generating updater-script...")
-                self.progress_bar.setValue(55)
-                logging.info(f'Creating updater-script')
-                cf.firmware_updater()
-            elif process == "nonarb":
-                self.status_box.setText(f"Unzipping MIUI...")
-                self.progress_bar.setValue(30)
-                logging.info(f'Unzipping {self.filename}')
-                cf.firmware_extract(self.filepath, process)
-                self.progress_bar.setValue(45)
-                self.status_box.setText("Generating updater-script...")
-                self.progress_bar.setValue(55)
-                logging.info(f'Creating updater-script')
-                cf.nonarb_updater()
-            elif process == "firmwareless":
-                self.status_box.setText(f"Unzipping MIUI... ({fw_type}) device")
-                self.progress_bar.setValue(30)
-                logging.info(f'Unzipping {self.filename}')
-                cf.rom_extract(self.filepath)
-                self.progress_bar.setValue(45)
-                self.status_box.setText("Generating updater-script...")
-                self.progress_bar.setValue(55)
-                logging.info(f'Creating updater-script')
-                cf.firmwareless_updater()
-            elif process == "vendor":
-                self.status_box.setText(f"Unzipping MIUI... ({fw_type}) device")
-                self.progress_bar.setValue(30)
-                logging.info(f'Unzipping {self.filename}')
-                cf.vendor_extract(self.filepath)
-                self.progress_bar.setValue(45)
-                self.status_box.setText("Generating updater-script...")
-                self.progress_bar.setValue(55)
-                logging.info(f'Creating updater-script')
-                cf.vendor_updater()
-        elif fw_type == 'mtk':
-            if process == "firmware":
-                self.status_box.setText(f"Unzipping MIUI... ({fw_type}) device")
-                self.progress_bar.setValue(30)
-                logging.info(f'Unzipping {self.filename}')
-                cf.mtk_firmware_extract(self.filepath)
-                self.progress_bar.setValue(45)
-                self.status_box.setText("Generating updater-script...")
-                self.progress_bar.setValue(55)
-                logging.info(f'Creating updater-script')
-                cf.mtk_firmware_updater()
-            elif process == "vendor":
-                self.status_box.setText(f"Unzipping MIUI... ({fw_type}) device")
-                self.progress_bar.setValue(30)
-                logging.info(f'Unzipping {self.filename}')
-                cf.vendor_extract(self.filepath)
-                self.progress_bar.setValue(45)
-                self.status_box.setText("Generating updater-script...")
-                self.progress_bar.setValue(55)
-                logging.info(f'Creating updater-script')
-                cf.mtk_vendor_updater()
-            else:
-                self.status_box.setText("Error: Unsupported operation for MTK!")
-                logging.warning(f'Unsupported operation for MTK')
-        else:
-            self.status_box.setText("Couldn't find firmware!")
-            logging.warning(f"Can't find firmware in {self.filename}")
+        self.status_box.setText(f"Unzipping MIUI... ({firmware_creator.type}) device")
+        self.progress_bar.setValue(20)
+        logging.info(f'Unzipping {self.filename}')
+        firmware_creator.extract()
+        self.progress_bar.setValue(45)
+        self.status_box.setText("Generating updater-script...")
+        self.progress_bar.setValue(55)
+        logging.info(f'Creating updater-script')
+        firmware_creator.generate_updater_script()
         self.status_box.setText("Creating zip..")
         self.progress_bar.setValue(75)
         logging.info(f'Creating output zip')
-        cf.make_zip(self.filepath, process)
-        self.status_box.setText("All Done!")
+        new_zip = firmware_creator.make_zip()
+        firmware_creator.cleanup()
+        firmware_creator.close()
+        self.status_box.setText(f"All Done! Output zip is {new_zip}")
         self.progress_bar.setValue(100)
         logging.info(f'Done')
 
@@ -611,6 +554,7 @@ class MainWindowUi(QMainWindow):
 
 
 def main():
+    """Main."""
     app = QApplication(sys.argv)
     settings = load_settings()
     lang = settings['language']
@@ -618,5 +562,5 @@ def main():
     translator = QtCore.QTranslator(app)
     translator.load(f'i18n/{lang}.qm')
     app.installTranslator(translator)
-    window = MainWindowUi(lang, translator)
+    _ = MainWindowUi(lang, translator)
     sys.exit(app.exec_())

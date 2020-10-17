@@ -8,9 +8,20 @@ license = "GPL-3.0-only"
 [tool.poetry.dependencies]
 python = "^3.6"
 PyQt5 = "^5.13.0"
+xiaomi_flashable_firmware_creator = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.pylint.messages_control]
+disable = [
+    "invalid-name",
+    "too-many-statements",
+    "too-many-instance-attributes",
+    "logging-fstring-interpolation",
+    "f-string-without-interpolation"
+]
+extension-pkg-whitelist = "PyQt5"

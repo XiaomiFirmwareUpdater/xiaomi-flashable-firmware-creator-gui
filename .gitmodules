@@ -1,4 +1,0 @@
-[submodule "xiaomi_flashable_firmware_creator_gui/cli"]
-	path = xiaomi_flashable_firmware_creator_gui/cli
-	url = https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py.git
-	branch = v2

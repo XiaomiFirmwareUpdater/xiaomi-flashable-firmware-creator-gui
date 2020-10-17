@@ -9,7 +9,7 @@ class AboutBox(QtWidgets.QDialog):
     About Window class
     """
     def __init__(self):
-        super(AboutBox, self).__init__()
+        super().__init__()
         # Init
         self.label_header = QtWidgets.QLabel(self)
         self.tabs = QtWidgets.QTabWidget(self)
