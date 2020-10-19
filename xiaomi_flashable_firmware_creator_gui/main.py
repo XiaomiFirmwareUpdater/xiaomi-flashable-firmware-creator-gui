@@ -6,59 +6,29 @@ import logging
 import sys
 from pathlib import Path
 
-from PyQt5.QtCore import QMimeDatabase, QUrl, QSize, QRect, QMetaObject, Qt, QTranslator
+from PyQt5.QtCore import QUrl, QSize, QRect, QMetaObject, Qt, QTranslator
 from PyQt5.QtGui import QIcon, QDesktopServices
 from PyQt5.QtWidgets import QGroupBox, QMainWindow, QWidget, QRadioButton, \
     QLabel, QFrame, QPushButton, QMenuBar, \
-    QMessageBox, QTextEdit, QProgressBar, QMenu, QStatusBar, QAction, \
+    QTextEdit, QProgressBar, QMenu, QStatusBar, QAction, \
     QSizePolicy, qApp, QApplication, QDesktopWidget, \
-    QFileDialog, QInputDialog, QDialog
+    QFileDialog, QDialog
 
 from xiaomi_flashable_firmware_creator.firmware_creator import FlashableFirmwareCreator
 from xiaomi_flashable_firmware_creator_gui import current_dir
-from xiaomi_flashable_firmware_creator_gui.about import AboutBox
+from xiaomi_flashable_firmware_creator_gui.components.about import AboutBox
+from xiaomi_flashable_firmware_creator_gui.components.drop_space import DropSpace
+from xiaomi_flashable_firmware_creator_gui.components.input_dialog import InputDialog
+from xiaomi_flashable_firmware_creator_gui.components.message_box import MessageBox, \
+    OutputMessageBox
+from xiaomi_flashable_firmware_creator_gui.helpers.layout import adjust_layout_direction
+from xiaomi_flashable_firmware_creator_gui.helpers.misc import browse_file_directory
 from xiaomi_flashable_firmware_creator_gui.helpers.settings import load_settings, update_settings
 
 logging.basicConfig(filename=f'{current_dir}/data/last_run.log', filemode='w',
                     format='(%(asctime)s) - %(name)s - %(levelname)s - %(message)s',
                     datefmt='%d-%b-%y %H:%M:%S',
                     level=logging.INFO)
-
-
-class DropSpace(QGroupBox):
-    """
-    Modified Groupbox to allow drag and drop
-    """
-    status_box = None
-
-    def __init__(self, parent, status_box):
-        super().__init__(parent)
-        self.setAcceptDrops(True)
-        DropSpace.status_box = status_box
-
-    @classmethod
-    def dragEnterEvent(cls, file):
-        """
-        Override default dragEnterEvent
-        Allows dragging zip files only
-        """
-        file_type = QMimeDatabase().mimeTypeForFile(
-            file.mimeData().urls()[0].toLocalFile()).name()
-        if file_type == 'application/zip':
-            file.accept()
-        else:
-            file.ignore()
-
-    @classmethod
-    def dropEvent(cls, file):
-        """
-        Override default dropEvent.
-        Update selected filename.
-        """
-        filepath = file.mimeData().urls()[0].toLocalFile()
-        cls.filepath = Path(filepath).absolute()
-        cls.filename = cls.filepath.name
-        cls.status_box.setText(f"File {cls.filename} is selected")
 
 
 class MainWindowUi(QMainWindow):
@@ -68,8 +38,8 @@ class MainWindowUi(QMainWindow):
         super().__init__()
         # Init
         self.lang = lang
-        self.translator = translator
-        self.tr = QApplication.translate
+        self._translateanslator = translator
+        self._translate = QApplication.translate
         self.window_body = QWidget(self)
         self.process_type = QGroupBox(self.window_body)
         self.btn_fw = QRadioButton(self.process_type)
@@ -80,10 +50,9 @@ class MainWindowUi(QMainWindow):
         self.btn_select = QPushButton(self.frame)
         self.btn_url = QPushButton(self.frame)
         self.btn_create = QPushButton(self.frame)
-        self.error_message = QMessageBox(self.window_body)
         self.menubar = QMenuBar(self)
         self.status_box = QTextEdit(self.window_body)
-        self.groupbox_drop = DropSpace(self.window_body, self.status_box)
+        self.groupbox_drop = DropSpace(self.window_body, self.status_box, self._translate)
         self.label_drop = QLabel(self.groupbox_drop)
         self.progress_bar = QProgressBar(self.window_body)
         self.menu_file = QMenu(self.menubar)
@@ -126,13 +95,11 @@ class MainWindowUi(QMainWindow):
         # vars
         self.filepath = None
         self.filename = ''
-        # other windows
-        self.about_box = AboutBox()
         # setup
         self.setup_ui()
         self.setWindowIcon(QIcon(f'{current_dir}/icon.png'))
         self.center()
-        self.adjust_layout_direction(lang)
+        adjust_layout_direction(self, lang)
         self.show()
 
     def setup_ui(self):
@@ -214,7 +181,6 @@ class MainWindowUi(QMainWindow):
         self.btn_create.setObjectName("btn_create")
         self.btn_create.setStatusTip("btn_create_tip")
         self.status_box.setGeometry(QRect(10, 250, 580, 40))
-        self.error_message.setIcon(QMessageBox.Critical)
         self.status_box.setObjectName("status_box")
         # self.status_box.setFrameShape(QFrame.Box)
         # self.status_box.setFrameShadow(QFrame.Sunken)
@@ -368,72 +334,70 @@ class MainWindowUi(QMainWindow):
         """
         Items strings
         """
-        self.setWindowTitle(self.tr("Title",
+        self.setWindowTitle(self._translate("Title",
                                     "Xiaomi Flashable Firmware Creator"))
-        self.process_type.setTitle(self.tr("Radio Buttons", "Process"))
-        self.btn_fw.setText(self.tr("Radio Buttons", "Firmware"))
-        self.btn_nonarb.setText(self.tr("Radio Buttons", "Non-ARB Firmware"))
-        self.btn_vendor.setText(self.tr("Radio Buttons", "Firmware + Vendor"))
-        self.btn_fwless.setText(self.tr("Radio Buttons", "Firmware-less ROM"))
-        self.groupbox_drop.setTitle(self.tr("Drop space", "Drop a file"))
-        self.label_drop.setText(self.tr("Drop space",
+        self.process_type.setTitle(self._translate("Radio Buttons", "Process"))
+        self.btn_fw.setText(self._translate("Radio Buttons", "Firmware"))
+        self.btn_nonarb.setText(self._translate("Radio Buttons", "Non-ARB Firmware"))
+        self.btn_vendor.setText(self._translate("Radio Buttons", "Firmware + Vendor"))
+        self.btn_fwless.setText(self._translate("Radio Buttons", "Firmware-less ROM"))
+        self.groupbox_drop.setTitle(self._translate("Drop space", "Drop a file"))
+        self.label_drop.setText(self._translate("Drop space",
                                         "<html><head/><body>"
                                         "<p align=\"center\">"
                                         "<span style=\" font-style:italic;\">"
                                         "Drop a rom zip file here"
                                         "</span></p></body></html>"))
-        self.error_message.setWindowTitle(self.tr("Main Buttons", "Error"))
-        self.error_message.setText(self.tr("Main Buttons", "You must select a ROM zip first!"))
-        self.btn_select.setText(self.tr("Main Buttons", "Select file"))
-        self.btn_select.setStatusTip(self.tr("Main Buttons", "Select MIUI Zip file"))
-        self.btn_url.setText(self.tr("Main Buttons", "Enter URL"))
-        self.btn_url.setStatusTip(self.tr("Main Buttons", "Enter a URL of a Zip file"))
-        self.btn_create.setText(self.tr("Main Buttons", "Create"))
-        self.btn_create.setStatusTip(self.tr("Main Buttons", "Create the selected output zip"))
-        self.menu_file.setTitle(self.tr("Menu bar", "File"))
-        self.menu_language.setTitle(self.tr("Menu bar", "Language"))
-        self.menu_help.setTitle(self.tr("Menu bar", "Help"))
-        self.action_open_zip.setText(self.tr("Menu bar", "Open ZIP"))
-        self.action_open_zip.setStatusTip(self.tr("Menu bar", "Select MIUI Zip file"))
-        self.action_open_remote_zip.setText(self.tr("Menu bar", "Enter URL"))
-        self.action_open_remote_zip.setStatusTip(self.tr("Menu bar", "Enter a URL of a Zip file"))
-        self.action_quit.setText(self.tr("Menu bar", "Quit"))
-        self.action_quit.setStatusTip(self.tr("Menu bar", "Exits the application"))
-        self.action_language_sq.setText(self.tr("Menu bar", "Albanian"))
-        self.action_language_ar.setText(self.tr("Menu bar", "Arabic"))
-        self.action_language_ca.setText(self.tr("Menu bar", "Catalan"))
-        self.action_language_zh_CN.setText(self.tr("Menu bar", "Chinese Simplified"))
-        self.action_language_hr.setText(self.tr("Menu bar", "Croatian"))
-        self.action_language_cs.setText(self.tr("Menu bar", "Czech"))
-        self.action_language_nl.setText(self.tr("Menu bar", "Dutch"))
-        self.action_language_en.setText(self.tr("Menu bar", "English"))
-        self.action_language_fr.setText(self.tr("Menu bar", "French"))
-        self.action_language_de.setText(self.tr("Menu bar", "German"))
-        self.action_language_el.setText(self.tr("Menu bar", "Greek"))
-        self.action_language_hi.setText(self.tr("Menu bar", "Hindi"))
-        self.action_language_id.setText(self.tr("Menu bar", "Indonesian"))
-        self.action_language_it.setText(self.tr("Menu bar", "Italian"))
-        self.action_language_ms.setText(self.tr("Menu bar", "Malay"))
-        self.action_language_fa.setText(self.tr("Menu bar", "Persian"))
-        self.action_language_pl.setText(self.tr("Menu bar", "Polish"))
-        self.action_language_pt_BR.setText(self.tr("Menu bar", "Portuguese, Brazilian"))
-        self.action_language_ro.setText(self.tr("Menu bar", "Romanian"))
-        self.action_language_ru.setText(self.tr("Menu bar", "Russian"))
-        self.action_language_sl.setText(self.tr("Menu bar", "Slovenian"))
-        self.action_language_es_ES.setText(self.tr("Menu bar", "Spanish"))
-        self.action_language_tr.setText(self.tr("Menu bar", "Turkish"))
-        self.action_language_uk.setText(self.tr("Menu bar", "Ukrainian"))
-        self.action_language_vi.setText(self.tr("Menu bar", "Vietnamese"))
-        self.action_report_bug.setText(self.tr("Menu bar", "Report Bug"))
-        self.action_report_bug.setStatusTip(self.tr("Menu bar", "Submit an issue "
+        self.btn_select.setText(self._translate("Main Buttons", "Select file"))
+        self.btn_select.setStatusTip(self._translate("Main Buttons", "Select MIUI Zip file"))
+        self.btn_url.setText(self._translate("Main Buttons", "Enter URL"))
+        self.btn_url.setStatusTip(self._translate("Main Buttons", "Enter a URL of a Zip file"))
+        self.btn_create.setText(self._translate("Main Buttons", "Create"))
+        self.btn_create.setStatusTip(self._translate("Main Buttons", "Create the selected output zip"))
+        self.menu_file.setTitle(self._translate("Menu bar", "File"))
+        self.menu_language.setTitle(self._translate("Menu bar", "Language"))
+        self.menu_help.setTitle(self._translate("Menu bar", "Help"))
+        self.action_open_zip.setText(self._translate("Menu bar", "Open ZIP"))
+        self.action_open_zip.setStatusTip(self._translate("Menu bar", "Select MIUI Zip file"))
+        self.action_open_remote_zip.setText(self._translate("Menu bar", "Enter URL"))
+        self.action_open_remote_zip.setStatusTip(self._translate("Menu bar", "Enter a URL of a Zip file"))
+        self.action_quit.setText(self._translate("Menu bar", "Quit"))
+        self.action_quit.setStatusTip(self._translate("Menu bar", "Exits the application"))
+        self.action_language_sq.setText(self._translate("Menu bar", "Albanian"))
+        self.action_language_ar.setText(self._translate("Menu bar", "Arabic"))
+        self.action_language_ca.setText(self._translate("Menu bar", "Catalan"))
+        self.action_language_zh_CN.setText(self._translate("Menu bar", "Chinese Simplified"))
+        self.action_language_hr.setText(self._translate("Menu bar", "Croatian"))
+        self.action_language_cs.setText(self._translate("Menu bar", "Czech"))
+        self.action_language_nl.setText(self._translate("Menu bar", "Dutch"))
+        self.action_language_en.setText(self._translate("Menu bar", "English"))
+        self.action_language_fr.setText(self._translate("Menu bar", "French"))
+        self.action_language_de.setText(self._translate("Menu bar", "German"))
+        self.action_language_el.setText(self._translate("Menu bar", "Greek"))
+        self.action_language_hi.setText(self._translate("Menu bar", "Hindi"))
+        self.action_language_id.setText(self._translate("Menu bar", "Indonesian"))
+        self.action_language_it.setText(self._translate("Menu bar", "Italian"))
+        self.action_language_ms.setText(self._translate("Menu bar", "Malay"))
+        self.action_language_fa.setText(self._translate("Menu bar", "Persian"))
+        self.action_language_pl.setText(self._translate("Menu bar", "Polish"))
+        self.action_language_pt_BR.setText(self._translate("Menu bar", "Portuguese, Brazilian"))
+        self.action_language_ro.setText(self._translate("Menu bar", "Romanian"))
+        self.action_language_ru.setText(self._translate("Menu bar", "Russian"))
+        self.action_language_sl.setText(self._translate("Menu bar", "Slovenian"))
+        self.action_language_es_ES.setText(self._translate("Menu bar", "Spanish"))
+        self.action_language_tr.setText(self._translate("Menu bar", "Turkish"))
+        self.action_language_uk.setText(self._translate("Menu bar", "Ukrainian"))
+        self.action_language_vi.setText(self._translate("Menu bar", "Vietnamese"))
+        self.action_report_bug.setText(self._translate("Menu bar", "Report Bug"))
+        self.action_report_bug.setStatusTip(self._translate("Menu bar", "Submit an issue "
                                                                 "in case anything is wrong"))
-        self.action_donate.setText(self.tr("Menu bar", "Donate"))
-        self.action_donate.setStatusTip(self.tr("Menu bar", "Show us some love"))
-        self.action_about.setText(self.tr("Menu bar", "About"))
-        self.action_about.setStatusTip(self.tr("Menu bar", "About this tool"))
-        self.action_website.setText(self.tr("Menu bar", "Website"))
-        self.action_website.setStatusTip(self.tr("Menu bar", "Visit tool website"))
-        self.status_box.setText(self.tr("Status Box", "Ready"))
+        self.action_donate.setText(self._translate("Menu bar", "Donate"))
+        self.action_donate.setStatusTip(self._translate("Menu bar", "Show us some love"))
+        self.action_about.setText(self._translate("Menu bar", "About"))
+        self.action_about.setStatusTip(self._translate("Menu bar", "About this tool"))
+        self.action_website.setText(self._translate("Menu bar", "Website"))
+        self.action_website.setStatusTip(self._translate("Menu bar", "Visit tool website"))
+        self.statusBar().showMessage(self._translate("Status Box", "Ready"))
 
     def center(self):
         """
@@ -454,20 +418,10 @@ class MainWindowUi(QMainWindow):
         Update strings language and settings
         """
         update_settings(dict({'language': lang}))
-        self.adjust_layout_direction(lang)
-        self.translator.load(f'{current_dir}/i18n/{lang}.qm')
+        adjust_layout_direction(self, lang)
+        self._translateanslator.load(f'{current_dir}/i18n/{lang}.qm')
         self.re_translate_ui()
         logging.info(f'Language is switched to {lang}')
-
-    def adjust_layout_direction(self, lang: str):
-        """
-        Change Layout Direction based on languages
-        """
-        rtl_languages = ['ar', 'az', 'dv', 'fa', 'he', 'ur']
-        if lang in rtl_languages:
-            self.setLayoutDirection(Qt.RightToLeft)
-        else:
-            self.setLayoutDirection(Qt.LeftToRight)
 
     def select_file(self):
         """
@@ -476,36 +430,42 @@ class MainWindowUi(QMainWindow):
         dialog = QFileDialog()
         filepath = dialog.getOpenFileName(
             self,
-            self.tr('Select Files Dialog', 'Select MIUI zip'),
-            '', self.tr('Select Files Dialog', 'MIUI zip files') + ' (*.zip)')[0]
+            self._translate('Select Files Dialog', 'Select MIUI zip'),
+            '', self._translate('Select Files Dialog', 'MIUI zip files') + ' (*.zip)')[0]
         if not filepath:
-            self.status_box.setText(self.tr("Status Box", "Please select a file!"))
+            self.statusBar().showMessage(self._translate("Status Box", "Please select a file!"))
+            self.status_box.setText(self._translate("Status Box", "Please select a file!"))
             return
         self.filepath = Path(filepath).absolute()
         self.filename = self.filepath.name
-        self.status_box.setText(self.tr("Status Box", f"File {self.filename} is selected"))
+        self.status_box.setText(self._translate("Status Box", f"File {self.filename} is selected"))
+        self.statusBar().showMessage(self._translate("Status Box", f"File {self.filename} is selected"))
         logging.info(f'File {self.filename} is selected')
 
     def enter_url(self):
         """
         Enter URL Dialog
         """
-        dialog = QInputDialog(self)
-        dialog.setInputMode(QInputDialog.TextInput)
-        dialog.setFixedSize(300, 100)
-        dialog.setOption(QInputDialog.UsePlainTextEditForTextInput)
-        dialog.setWindowTitle(self.tr('Enter URL Dialog', 'Remote Zip URL'))
-        dialog.setLabelText(self.tr('Enter URL Dialog', 'Enter a MIUI zip direct link:'))
-        dialog.setOkButtonText(self.tr('Enter URL Dialog', 'Set URL'))
-        dialog.setCancelButtonText(self.tr('Enter URL Dialog', 'Cancel'))
+        dialog = InputDialog(self._translate('Enter URL Dialog', 'Remote Zip URL'),
+                             self._translate('Enter URL Dialog', 'Enter a MIUI zip direct link:'),
+                             self._translate('Enter URL Dialog', 'Set URL'),
+                             self._translate('Enter URL Dialog', 'Cancel'),
+                             parent=self.window_body)
         if dialog.exec_() == QDialog.Accepted:
             url = dialog.textValue()
             if "http" not in url or "ota.d.miui.com" not in url:
-                QMessageBox.warning(self, "Error", self.tr('Warning', 'Not a valid URL.'))
+                message_box = MessageBox(self._translate('Popup Message', 'Error'),
+                                         self._translate('Popup Message', 'Not a valid URL.'),
+                                         self._translate('Popup Message', 'OK'), box_type="Warning",
+                                         parent=self.window_body)
+                message_box.exec_()
+                # if button_clicked == QMessageBox.Ok:
+                #     pass
                 return
             self.filepath = url
             self.filename = url.split("/")[-1]
-            self.status_box.setText(self.tr("Status Box", f"Remote file {self.filename} is selected."))
+            self.status_box.setText(
+                self._translate("Status Box", f"Remote file {self.filename} is selected."))
             logging.info(f'Remote file {self.filename} is selected')
 
     def create_zip(self):
@@ -515,7 +475,11 @@ class MainWindowUi(QMainWindow):
         checked_radiobutton = None
         process = None
         if not self.filepath:
-            self.error_message.exec_()
+            error_box = MessageBox(self._translate('Popup Message', 'Error'),
+                                   self._translate('Popup Message', 'You must select a ROM zip first!'),
+                                   self._translate('Popup Message', 'OK'), box_type="Critical",
+                                   parent=self.window_body)
+            error_box.exec_()
             logging.info(f'No Zip error shown')
             return
 
@@ -531,7 +495,7 @@ class MainWindowUi(QMainWindow):
             process = 'vendor'
         if checked_radiobutton == 'Firmware-less ROM':
             process = 'firmwareless'
-        self.status_box.setText(self.tr("Status Box", f"Starting {process} job"))
+        self.status_box.setText(self._translate("Status Box", f"Starting {process} job"))
         out_dir = Path(".").absolute() if isinstance(self.filepath, str) else self.filepath.parent
         firmware_creator = FlashableFirmwareCreator(str(self.filepath),
                                                     process, out_dir)
@@ -539,11 +503,11 @@ class MainWindowUi(QMainWindow):
         logging.info(f'Starting extract job')
         self.progress_bar.setValue(5)
         self.status_box.setText(
-            self.tr("Status Box", f"Detected {firmware_creator.type.name} device"))
+            self._translate("Status Box", f"Detected {firmware_creator.type.name} device"))
         logging.info(f'Detected {firmware_creator.type.name} device')
         self.progress_bar.setValue(10)
         self.status_box.setText(
-            self.tr("Status Box", f"Unzipping MIUI... ({firmware_creator.type.name}) device"))
+            self._translate("Status Box", f"Unzipping MIUI... ({firmware_creator.type.name}) device"))
         self.progress_bar.setValue(20)
         logging.info(f'Unzipping {self.filename}')
         extracted = False
@@ -552,10 +516,13 @@ class MainWindowUi(QMainWindow):
             extracted = True
         except RuntimeError as err:
             if str(err) == "Nothing found to extract!":
-                QMessageBox.warning(self, "Error",
-                                    self.tr('Warning', 'Unsupported operation for MTK!'))
+                message_box = MessageBox(self._translate('Popup Message', 'Error'),
+                                         self._translate('Popup Message', 'Unsupported operation for MTK!'),
+                                         self._translate('Popup Message', 'OK'), box_type="Warning",
+                                         parent=self.window_body)
+                message_box.exec_()
                 self.status_box.setText(
-                    self.tr("Status Box", "Error: Unsupported operation for MTK!"))
+                    self._translate("Status Box", "Error: Unsupported operation for MTK!"))
                 logging.warning(f'Unsupported operation for MTK')
                 firmware_creator.close()
                 self.progress_bar.setValue(100)
@@ -564,19 +531,28 @@ class MainWindowUi(QMainWindow):
         if extracted:
             self.progress_bar.setValue(45)
             self.status_box.setText(
-                self.tr("Status Box", "Generating updater-script..."))
+                self._translate("Status Box", "Generating updater-script..."))
             self.progress_bar.setValue(55)
             logging.info(f'Creating updater-script')
             firmware_creator.generate_updater_script()
-            self.status_box.setText(self.tr("Status Box", "Creating zip.."))
+            self.status_box.setText(self._translate("Status Box", "Creating zip.."))
             self.progress_bar.setValue(75)
             logging.info(f'Creating output zip')
             new_zip = firmware_creator.make_zip()
             firmware_creator.cleanup()
             firmware_creator.close()
-            self.status_box.setText(self.tr("Status Box", f"All Done! Output zip is {new_zip}"))
             self.progress_bar.setValue(100)
+            message_box = OutputMessageBox(
+                self._translate('Popup Message', 'Done'),
+                self._translate('Popup Message', f'All Done! Output zip is {new_zip}'),
+                self._translate('Popup Message', 'OK'), self._translate('Popup Message', 'Show in folder'),
+                self.filepath, parent=self.window_body)
+            clicked = message_box.exec_()
+            if clicked:
+                browse_file_directory(self.filepath)
             logging.info(f'Done')
+            self.status_box.setText(self._translate("Status Box", "Ready"))
+            self.statusBar().showMessage(self._translate("Status Box", "Ready"))
 
     @staticmethod
     def open_link(link):
@@ -590,8 +566,9 @@ class MainWindowUi(QMainWindow):
         """
         Opens About box
         """
-        self.about_box.setup_ui(self.about_box)
-        self.about_box.show()
+        about_box = AboutBox(self.lang)
+        about_box.setup_ui()
+        about_box.exec_()
 
 
 def main():

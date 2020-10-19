@@ -1,552 +1,514 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="2.0">
-<context>
-    <name>AboutBox</name>
+<context encoding="UTF-8">
+    <name>About Box</name>
     <message>
-        <location filename="../about.py" line="130"/>
-        <source>About Box</source>
-        <comment>About </comment>
+        <location filename="../../components/about.py" line="121"/>
+        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="131"/>
-        <source>About Box</source>
-        <comment>Xiaomi Flashable Firmware Creator</comment>
+        <location filename="../../components/about.py" line="134"/>
+        <source>About </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="133"/>
-        <source>About Box</source>
-        <comment>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <location filename="../../components/about.py" line="135"/>
+        <source>Xiaomi Flashable Firmware Creator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message encoding="UTF-8">
+        <location filename="../../components/about.py" line="137"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
  &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Xiaomi Flashable Firmware Creator&lt;/span&gt;&lt;/a&gt; is a Python 3 tool that generates flashable firmware-update packages, extracted from official MIUI ROMS. By &lt;a href=&quot;https://xiaomifirmwareupdater.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;XiaomiFirmwareUpdater.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;It supports creating untouched firmware, non-arb firmware, firmware + vendor flashable zip, and firmware-less ROMs.&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://xiaomifirmwareupdater.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Xiaomi Firmware Updater&lt;/span&gt;&lt;/a&gt; is a community project, started in January 2018, aims to provide firmware packages for all Xiaomi devices, in order to allow custom ROM users to update their devices&#xe2;&#x80;&#x99; firmware easily through custom recovery instead of having to flash full ROM every time they want to update.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</comment>
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://xiaomifirmwareupdater.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Xiaomi Firmware Updater&lt;/span&gt;&lt;/a&gt; is a community project, started in January 2018, aims to provide firmware packages for all Xiaomi devices, in order to allow custom ROM users to update their devices’ firmware easily through custom recovery instead of having to flash full ROM every time they want to update.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="182"/>
-        <source>About Box</source>
-        <comment>About</comment>
+        <location filename="../../components/about.py" line="186"/>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="184"/>
-        <source>About Box</source>
-        <comment>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <location filename="../../components/about.py" line="188"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Xiaomi Flashable Firmware Creator is a free and open source software, licensed under the GPL-3.0 (GNU GENERAL PUBLIC LICENSE) license.&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;It uses the following libraries:&lt;/p&gt;
-&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.15.0 (built against 5.15.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</comment>
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.15.0 (built against 5.15.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="216"/>
-        <source>About Box</source>
-        <comment>Sources</comment>
+        <location filename="../../components/about.py" line="220"/>
+        <source>Sources</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="218"/>
-        <source>About Box</source>
-        <comment>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <location filename="../../components/about.py" line="222"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/yshalsager&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;yshalsager&lt;/span&gt;&lt;/a&gt;  - Lead Developer&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</comment>
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/yshalsager&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;yshalsager&lt;/span&gt;&lt;/a&gt;  - Lead Developer&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="240"/>
-        <source>About Box</source>
-        <comment>Authors</comment>
+        <location filename="../../components/about.py" line="244"/>
+        <source>Authors</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../about.py" line="242"/>
-        <source>About Box</source>
-        <comment>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+    <message encoding="UTF-8">
+        <location filename="../../components/about.py" line="246"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/ardadem&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;ardadem&lt;/span&gt;&lt;/a&gt; for shell script version&lt;/li&gt;
-&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/hh2333&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;TH779&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/PIPIPIG233666&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;PIPIPIG233666&lt;/span&gt;&lt;/a&gt; for Simplified Chinese translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/zstanecic&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Zvonimir Stanecic&lt;/span&gt;&lt;/a&gt; for Croatian translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/0n3-70uch&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Fabian Briese&lt;/span&gt;&lt;/a&gt; for German translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://t.me/foxone&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Ed&lt;/span&gt;&lt;/a&gt; for Italian translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/kacskrz&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Orjon&lt;/span&gt;&lt;/a&gt; for Polish translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/DeicPro&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Pablo&lt;/span&gt;&lt;/a&gt; and Thorin for Spanish translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://t.me/Bodzey&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Bohdan Cherniak&lt;/span&gt;&lt;/a&gt; for Russian translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/EnesSastim&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Enes Sastim&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/trzpro&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Emir Bardak&#xc3;&#xa7;&#xc4;&#xb1;&lt;/span&gt;&lt;/a&gt; for Turkish translation&lt;/li&gt;&lt;/ul&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br/&gt;And all people who have contributed and I have forgotten to mention.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</comment>
+&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/hh2333&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;TH779&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/PIPIPIG233666&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;PIPIPIG233666&lt;/span&gt;&lt;/a&gt; for Simplified Chinese translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/zstanecic&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Zvonimir Stanecic&lt;/span&gt;&lt;/a&gt; for Croatian translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/0n3-70uch&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Fabian Briese&lt;/span&gt;&lt;/a&gt; for German translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://t.me/foxone&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Ed&lt;/span&gt;&lt;/a&gt; for Italian translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/kacskrz&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Orjon&lt;/span&gt;&lt;/a&gt; for Polish translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/DeicPro&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Pablo&lt;/span&gt;&lt;/a&gt; and Thorin for Spanish translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://t.me/Bodzey&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Bohdan Cherniak&lt;/span&gt;&lt;/a&gt; for Russian translation&lt;/li&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/EnesSastim&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Enes Sastim&lt;/span&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/trzpro&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Emir Bardakçı&lt;/span&gt;&lt;/a&gt; for Turkish translation&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br/&gt;And all people who have contributed and I have forgotten to mention.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="348"/>
-        <source>About Box</source>
-        <comment>Thanks To</comment>
+        <location filename="../../components/about.py" line="352"/>
+        <source>Thanks To</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>MainWindowUi</name>
+    <name>Drop space</name>
     <message>
-        <location filename="../main.py" line="371"/>
-        <source>Title</source>
-        <comment>Xiaomi Flashable Firmware Creator</comment>
+        <location filename="../../main.py" line="344"/>
+        <source>Drop a file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="373"/>
-        <source>Radio Buttons</source>
-        <comment>Process</comment>
+        <location filename="../../main.py" line="345"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Drop a rom zip file here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Enter URL Dialog</name>
     <message>
-        <location filename="../main.py" line="374"/>
-        <source>Radio Buttons</source>
-        <comment>Firmware</comment>
+        <location filename="../../main.py" line="449"/>
+        <source>Remote Zip URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="375"/>
-        <source>Radio Buttons</source>
-        <comment>Non-ARB Firmware</comment>
+        <location filename="../../main.py" line="449"/>
+        <source>Enter a MIUI zip direct link:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="376"/>
-        <source>Radio Buttons</source>
-        <comment>Firmware + Vendor</comment>
+        <location filename="../../main.py" line="449"/>
+        <source>Set URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="377"/>
-        <source>Radio Buttons</source>
-        <comment>Firmware-less ROM</comment>
+        <location filename="../../main.py" line="449"/>
+        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Main Buttons</name>
     <message>
-        <location filename="../main.py" line="378"/>
-        <source>Drop space</source>
-        <comment>Drop a file</comment>
+        <location filename="../../main.py" line="351"/>
+        <source>Select file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="379"/>
-        <source>Drop space</source>
-        <comment>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Drop a rom zip file here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</comment>
+        <location filename="../../main.py" line="352"/>
+        <source>Select MIUI Zip file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="385"/>
-        <source>Main Buttons</source>
-        <comment>Error</comment>
+        <location filename="../../main.py" line="353"/>
+        <source>Enter URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="386"/>
-        <source>Main Buttons</source>
-        <comment>You must select a ROM zip first!</comment>
+        <location filename="../../main.py" line="354"/>
+        <source>Enter a URL of a Zip file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="387"/>
-        <source>Main Buttons</source>
-        <comment>Select file</comment>
+        <location filename="../../main.py" line="355"/>
+        <source>Create</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="388"/>
-        <source>Main Buttons</source>
-        <comment>Select MIUI Zip file</comment>
+        <location filename="../../main.py" line="356"/>
+        <source>Create the selected output zip</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Menu bar</name>
     <message>
-        <location filename="../main.py" line="389"/>
-        <source>Main Buttons</source>
-        <comment>Enter URL</comment>
+        <location filename="../../main.py" line="357"/>
+        <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="390"/>
-        <source>Main Buttons</source>
-        <comment>Enter a URL of a Zip file</comment>
+        <location filename="../../main.py" line="358"/>
+        <source>Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="391"/>
-        <source>Main Buttons</source>
-        <comment>Create</comment>
+        <location filename="../../main.py" line="359"/>
+        <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="392"/>
-        <source>Main Buttons</source>
-        <comment>Create the selected output zip</comment>
+        <location filename="../../main.py" line="360"/>
+        <source>Open ZIP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="393"/>
-        <source>Menu bar</source>
-        <comment>File</comment>
+        <location filename="../../main.py" line="361"/>
+        <source>Select MIUI Zip file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="394"/>
-        <source>Menu bar</source>
-        <comment>Language</comment>
+        <location filename="../../main.py" line="362"/>
+        <source>Enter URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="395"/>
-        <source>Menu bar</source>
-        <comment>Help</comment>
+        <location filename="../../main.py" line="363"/>
+        <source>Enter a URL of a Zip file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="396"/>
-        <source>Menu bar</source>
-        <comment>Open ZIP</comment>
+        <location filename="../../main.py" line="364"/>
+        <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="397"/>
-        <source>Menu bar</source>
-        <comment>Select MIUI Zip file</comment>
+        <location filename="../../main.py" line="365"/>
+        <source>Exits the application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="398"/>
-        <source>Menu bar</source>
-        <comment>Enter URL</comment>
+        <location filename="../../main.py" line="366"/>
+        <source>Albanian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="399"/>
-        <source>Menu bar</source>
-        <comment>Enter a URL of a Zip file</comment>
+        <location filename="../../main.py" line="367"/>
+        <source>Arabic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="400"/>
-        <source>Menu bar</source>
-        <comment>Quit</comment>
+        <location filename="../../main.py" line="368"/>
+        <source>Catalan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="401"/>
-        <source>Menu bar</source>
-        <comment>Exits the application</comment>
+        <location filename="../../main.py" line="369"/>
+        <source>Chinese Simplified</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="402"/>
-        <source>Menu bar</source>
-        <comment>Albanian</comment>
+        <location filename="../../main.py" line="370"/>
+        <source>Croatian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="403"/>
-        <source>Menu bar</source>
-        <comment>Arabic</comment>
+        <location filename="../../main.py" line="371"/>
+        <source>Czech</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="404"/>
-        <source>Menu bar</source>
-        <comment>Catalan</comment>
+        <location filename="../../main.py" line="372"/>
+        <source>Dutch</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="405"/>
-        <source>Menu bar</source>
-        <comment>Chinese Simplified</comment>
+        <location filename="../../main.py" line="373"/>
+        <source>English</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="406"/>
-        <source>Menu bar</source>
-        <comment>Croatian</comment>
+        <location filename="../../main.py" line="374"/>
+        <source>French</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="407"/>
-        <source>Menu bar</source>
-        <comment>Czech</comment>
+        <location filename="../../main.py" line="375"/>
+        <source>German</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="408"/>
-        <source>Menu bar</source>
-        <comment>Dutch</comment>
+        <location filename="../../main.py" line="376"/>
+        <source>Greek</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="409"/>
-        <source>Menu bar</source>
-        <comment>English</comment>
+        <location filename="../../main.py" line="377"/>
+        <source>Hindi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="410"/>
-        <source>Menu bar</source>
-        <comment>French</comment>
+        <location filename="../../main.py" line="378"/>
+        <source>Indonesian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="411"/>
-        <source>Menu bar</source>
-        <comment>German</comment>
+        <location filename="../../main.py" line="379"/>
+        <source>Italian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="412"/>
-        <source>Menu bar</source>
-        <comment>Greek</comment>
+        <location filename="../../main.py" line="380"/>
+        <source>Malay</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="413"/>
-        <source>Menu bar</source>
-        <comment>Hindi</comment>
+        <location filename="../../main.py" line="381"/>
+        <source>Persian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="414"/>
-        <source>Menu bar</source>
-        <comment>Indonesian</comment>
+        <location filename="../../main.py" line="382"/>
+        <source>Polish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="415"/>
-        <source>Menu bar</source>
-        <comment>Italian</comment>
+        <location filename="../../main.py" line="383"/>
+        <source>Portuguese, Brazilian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="416"/>
-        <source>Menu bar</source>
-        <comment>Malay</comment>
+        <location filename="../../main.py" line="384"/>
+        <source>Romanian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="417"/>
-        <source>Menu bar</source>
-        <comment>Persian</comment>
+        <location filename="../../main.py" line="385"/>
+        <source>Russian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="418"/>
-        <source>Menu bar</source>
-        <comment>Polish</comment>
+        <location filename="../../main.py" line="386"/>
+        <source>Slovenian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="419"/>
-        <source>Menu bar</source>
-        <comment>Portuguese, Brazilian</comment>
+        <location filename="../../main.py" line="387"/>
+        <source>Spanish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="420"/>
-        <source>Menu bar</source>
-        <comment>Romanian</comment>
+        <location filename="../../main.py" line="388"/>
+        <source>Turkish</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="421"/>
-        <source>Menu bar</source>
-        <comment>Russian</comment>
+        <location filename="../../main.py" line="389"/>
+        <source>Ukrainian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="422"/>
-        <source>Menu bar</source>
-        <comment>Slovenian</comment>
+        <location filename="../../main.py" line="390"/>
+        <source>Vietnamese</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="423"/>
-        <source>Menu bar</source>
-        <comment>Spanish</comment>
+        <location filename="../../main.py" line="391"/>
+        <source>Report Bug</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="424"/>
-        <source>Menu bar</source>
-        <comment>Turkish</comment>
+        <location filename="../../main.py" line="392"/>
+        <source>Submit an issue in case anything is wrong</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="425"/>
-        <source>Menu bar</source>
-        <comment>Ukrainian</comment>
+        <location filename="../../main.py" line="394"/>
+        <source>Donate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="426"/>
-        <source>Menu bar</source>
-        <comment>Vietnamese</comment>
+        <location filename="../../main.py" line="395"/>
+        <source>Show us some love</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="427"/>
-        <source>Menu bar</source>
-        <comment>Report Bug</comment>
+        <location filename="../../main.py" line="396"/>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="428"/>
-        <source>Menu bar</source>
-        <comment>Submit an issue in case anything is wrong</comment>
+        <location filename="../../main.py" line="397"/>
+        <source>About this tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="430"/>
-        <source>Menu bar</source>
-        <comment>Donate</comment>
+        <location filename="../../main.py" line="398"/>
+        <source>Website</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="431"/>
-        <source>Menu bar</source>
-        <comment>Show us some love</comment>
+        <location filename="../../main.py" line="399"/>
+        <source>Visit tool website</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Popup Message</name>
     <message>
-        <location filename="../main.py" line="432"/>
-        <source>Menu bar</source>
-        <comment>About</comment>
+        <location filename="../../main.py" line="519"/>
+        <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="433"/>
-        <source>Menu bar</source>
-        <comment>About this tool</comment>
+        <location filename="../../main.py" line="457"/>
+        <source>Not a valid URL.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="434"/>
-        <source>Menu bar</source>
-        <comment>Website</comment>
+        <location filename="../../main.py" line="545"/>
+        <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="435"/>
-        <source>Menu bar</source>
-        <comment>Visit tool website</comment>
+        <location filename="../../main.py" line="478"/>
+        <source>You must select a ROM zip first!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="436"/>
-        <source>Status Box</source>
-        <comment>Ready</comment>
+        <location filename="../../main.py" line="519"/>
+        <source>Unsupported operation for MTK!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="477"/>
-        <source>Select Files Dialog</source>
-        <comment>Select MIUI zip</comment>
+        <location filename="../../main.py" line="545"/>
+        <source>Done</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="477"/>
-        <source>Select Files Dialog</source>
-        <comment>MIUI zip files</comment>
+        <location filename="../../main.py" line="545"/>
+        <source>All Done! Output zip is {new_zip}</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="482"/>
-        <source>Status Box</source>
-        <comment>Please select a file!</comment>
+        <location filename="../../main.py" line="545"/>
+        <source>Show in folder</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Radio Buttons</name>
     <message>
-        <location filename="../main.py" line="486"/>
-        <source>Status Box</source>
-        <comment>File {self.filename} is selected</comment>
+        <location filename="../../main.py" line="339"/>
+        <source>Process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="497"/>
-        <source>Enter URL Dialog</source>
-        <comment>Remote Zip URL</comment>
+        <location filename="../../main.py" line="340"/>
+        <source>Firmware</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="498"/>
-        <source>Enter URL Dialog</source>
-        <comment>Enter a MIUI zip direct link:</comment>
+        <location filename="../../main.py" line="341"/>
+        <source>Non-ARB Firmware</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="499"/>
-        <source>Enter URL Dialog</source>
-        <comment>Set URL</comment>
+        <location filename="../../main.py" line="342"/>
+        <source>Firmware + Vendor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="500"/>
-        <source>Enter URL Dialog</source>
-        <comment>Cancel</comment>
+        <location filename="../../main.py" line="343"/>
+        <source>Firmware-less ROM</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Select Files Dialog</name>
     <message>
-        <location filename="../main.py" line="504"/>
-        <source>Warning</source>
-        <comment>Not a valid URL.</comment>
+        <location filename="../../main.py" line="431"/>
+        <source>Select MIUI zip</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="508"/>
-        <source>Status Box</source>
-        <comment>Remote file {self.filename} is selected.</comment>
+        <location filename="../../main.py" line="431"/>
+        <source>MIUI zip files</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Status Box</name>
     <message>
-        <location filename="../main.py" line="534"/>
-        <source>Status Box</source>
-        <comment>Starting {process} job</comment>
+        <location filename="../../main.py" line="555"/>
+        <source>Ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="541"/>
-        <source>Status Box</source>
-        <comment>Detected {firmware_creator.type.name} device</comment>
+        <location filename="../../main.py" line="437"/>
+        <source>Please select a file!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="545"/>
-        <source>Status Box</source>
-        <comment>Unzipping MIUI... ({firmware_creator.type.name}) device</comment>
+        <location filename="../../main.py" line="442"/>
+        <source>File {self.filename} is selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="555"/>
-        <source>Warning</source>
-        <comment>Unsupported operation for MTK!</comment>
+        <location filename="../../main.py" line="467"/>
+        <source>Remote file {self.filename} is selected.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="557"/>
-        <source>Status Box</source>
-        <comment>Error: Unsupported operation for MTK!</comment>
+        <location filename="../../main.py" line="498"/>
+        <source>Starting {process} job</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="566"/>
-        <source>Status Box</source>
-        <comment>Generating updater-script...</comment>
+        <location filename="../../main.py" line="505"/>
+        <source>Detected {firmware_creator.type.name} device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="571"/>
-        <source>Status Box</source>
-        <comment>Creating zip..</comment>
+        <location filename="../../main.py" line="509"/>
+        <source>Unzipping MIUI... ({firmware_creator.type.name}) device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="577"/>
-        <source>Status Box</source>
-        <comment>All Done! Output zip is {new_zip}</comment>
+        <location filename="../../main.py" line="524"/>
+        <source>Error: Unsupported operation for MTK!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main.py" line="533"/>
+        <source>Generating updater-script...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../main.py" line="538"/>
+        <source>Creating zip..</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../components/drop_space.py" line="47"/>
+        <source>File {cls.filename} is selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Title</name>
+    <message>
+        <location filename="../../main.py" line="337"/>
+        <source>Xiaomi Flashable Firmware Creator</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -5,15 +5,18 @@ from PyQt5.QtGui import QIcon, QPixmap, QFont
 from PyQt5.QtWidgets import QDialog, QLabel, QTabWidget, QWidget, \
     QTextBrowser, QDialogButtonBox, QSizePolicy, QApplication
 
+from xiaomi_flashable_firmware_creator_gui.helpers.layout import adjust_layout_direction
+
 
 class AboutBox(QDialog):
     """
     About Window class
     """
 
-    def __init__(self):
+    def __init__(self, lang):
         super().__init__()
-        self.tr = QCoreApplication.translate
+        self.lang = lang
+        self._translate = QCoreApplication.translate
         # Init
         self.label_header = QLabel(self)
         self.tabs = QTabWidget(self)
@@ -27,23 +30,23 @@ class AboutBox(QDialog):
         self.thanks_text = QTextBrowser(self.tab_thanks)
         self.button_box = QDialogButtonBox(self)
 
-    def setup_ui(self, about_box):
+    def setup_ui(self):
         """
         setup window ui
         """
-        about_box.setObjectName("about_box")
-        about_box.resize(600, 345)
+        self.setObjectName("about_box")
+        self.resize(600, 345)
         size_policy = QSizePolicy(
             QSizePolicy.Fixed, QSizePolicy.Fixed)
         size_policy.setHorizontalStretch(0)
         size_policy.setVerticalStretch(0)
-        size_policy.setHeightForWidth(about_box.sizePolicy().hasHeightForWidth())
-        about_box.setSizePolicy(size_policy)
-        about_box.setMinimumSize(QSize(600, 345))
-        about_box.setMaximumSize(QSize(600, 345))
+        size_policy.setHeightForWidth(self.sizePolicy().hasHeightForWidth())
+        self.setSizePolicy(size_policy)
+        self.setMinimumSize(QSize(600, 345))
+        self.setMaximumSize(QSize(600, 345))
         icon = QIcon()
         icon.addPixmap(QPixmap("icon.png"), QIcon.Normal, QIcon.Off)
-        about_box.setWindowIcon(icon)
+        self.setWindowIcon(icon)
         self.label_header.setGeometry(QRect(0, 0, 571, 41))
         size_policy = QSizePolicy(
             QSizePolicy.Preferred, QSizePolicy.Preferred)
@@ -114,23 +117,24 @@ class AboutBox(QDialog):
         self.button_box.setOrientation(Qt.Horizontal)
         self.button_box.setStandardButtons(
             QDialogButtonBox.Cancel)
-        # self.button_box.setText(self.tr("About Box", "Cancel"))
+        cancel_button = self.button_box.button(QDialogButtonBox.Cancel)
+        cancel_button.setText(self._translate("About Box", "Cancel"))
         self.button_box.setObjectName("button_box")
-        self.button_box.rejected.connect(about_box.reject)
-        self.button_box.accepted.connect(about_box.accept)
-
-        self.retranslate_ui(about_box)
+        self.button_box.rejected.connect(self.reject)
+        self.button_box.accepted.connect(self.accept)
+        adjust_layout_direction(self, self.lang)
+        self.retranslate_ui()
         self.tabs.setCurrentIndex(0)
-        QMetaObject.connectSlotsByName(about_box)
+        QMetaObject.connectSlotsByName(self)
 
-    def retranslate_ui(self, about_box):
+    def retranslate_ui(self):
         """
         Items strings
         """
-        about_box.setWindowTitle(self.tr("About Box", "About "))
+        self.setWindowTitle(self._translate("About Box", "About "))
         self.label_header.setText(
-            self.tr("About Box", "Xiaomi Flashable Firmware Creator"))
-        self.about_text.setHtml(self.tr("About Box",
+            self._translate("About Box", "Xiaomi Flashable Firmware Creator"))
+        self.about_text.setHtml(self._translate("About Box",
                                         "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
                                         "\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n "
                                         "<html><head><meta name=\"qrichtext\" content=\"1\" />"
@@ -180,8 +184,8 @@ class AboutBox(QDialog):
                                         "full ROM every time they want to update."
                                         "</p></body></html>"))
         self.tabs.setTabText(self.tabs.indexOf(self.tab_about),
-                             self.tr("About Box", "About"))
-        self.sources_text.setHtml(self.tr("About Box",
+                             self._translate("About Box", "About"))
+        self.sources_text.setHtml(self._translate("About Box",
                                           "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
                                           "\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
                                           "<html><head><meta name=\"qrichtext\" content=\"1\" />"
@@ -214,8 +218,8 @@ class AboutBox(QDialog):
                                           "PyQt 5.15.0 (built against 5.15.0)</li></ul>"
                                           "</body></html>"))
         self.tabs.setTabText(self.tabs.indexOf(self.tab_sources),
-                             self.tr("About Box", "Sources"))
-        self.authors_text.setHtml(self.tr("About Box",
+                             self._translate("About Box", "Sources"))
+        self.authors_text.setHtml(self._translate("About Box",
                                           "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
                                           "\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
                                           "<html><head><meta name=\"qrichtext\" content=\"1\" />"
@@ -238,8 +242,8 @@ class AboutBox(QDialog):
                                           "yshalsager</span></a>  - Lead Developer</li><"
                                           "/ul></body></html>"))
         self.tabs.setTabText(self.tabs.indexOf(self.tab_authors),
-                             self.tr("About Box", "Authors"))
-        self.thanks_text.setHtml(self.tr("About Box",
+                             self._translate("About Box", "Authors"))
+        self.thanks_text.setHtml(self._translate("About Box",
                                          "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
                                          "\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
                                          "<html><head><meta name=\"qrichtext\" content=\"1\" "
@@ -346,14 +350,14 @@ class AboutBox(QDialog):
                                          "and I have forgotten to mention."
                                          "</p></body></html>"))
         self.tabs.setTabText(self.tabs.indexOf(self.tab_thanks),
-                             self.tr("About Box", "Thanks To"))
+                             self._translate("About Box", "Thanks To"))
 
 
 if __name__ == "__main__":
     import sys
 
     app = QApplication(sys.argv)
-    about = AboutBox()
-    about.setup_ui(about)
+    about = AboutBox('en_US')
+    about.setup_ui()
     about.show()
     sys.exit(app.exec_())
