@@ -3,19 +3,19 @@
 <context>
     <name>AboutBox</name>
     <message>
-        <location filename="../about.py" line="129"/>
+        <location filename="../about.py" line="130"/>
         <source>About Box</source>
         <comment>About </comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="130"/>
+        <location filename="../about.py" line="131"/>
         <source>About Box</source>
         <comment>Xiaomi Flashable Firmware Creator</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="132"/>
+        <location filename="../about.py" line="133"/>
         <source>About Box</source>
         <comment>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
  &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -27,13 +27,13 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="181"/>
+        <location filename="../about.py" line="182"/>
         <source>About Box</source>
         <comment>About</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="183"/>
+        <location filename="../about.py" line="184"/>
         <source>About Box</source>
         <comment>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -45,13 +45,13 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="215"/>
+        <location filename="../about.py" line="216"/>
         <source>About Box</source>
         <comment>Sources</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="217"/>
+        <location filename="../about.py" line="218"/>
         <source>About Box</source>
         <comment>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -61,13 +61,13 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="239"/>
+        <location filename="../about.py" line="240"/>
         <source>About Box</source>
         <comment>Authors</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="241"/>
+        <location filename="../about.py" line="242"/>
         <source>About Box</source>
         <comment>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -79,7 +79,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../about.py" line="347"/>
+        <location filename="../about.py" line="348"/>
         <source>About Box</source>
         <comment>Thanks To</comment>
         <translation type="unfinished"></translation>
@@ -88,429 +88,465 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>MainWindowUi</name>
     <message>
-        <location filename="../main.py" line="369"/>
+        <location filename="../main.py" line="371"/>
         <source>Title</source>
-        <comment>Xiaomi Flashable Firmware Creator by XiaomiFirmwareUpdater</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="372"/>
-        <source>Radio Buttons</source>
-        <comment>Process</comment>
+        <comment>Xiaomi Flashable Firmware Creator</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="373"/>
         <source>Radio Buttons</source>
-        <comment>Firmware</comment>
+        <comment>Process</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="374"/>
         <source>Radio Buttons</source>
-        <comment>Non-ARB Firmware</comment>
+        <comment>Firmware</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="375"/>
         <source>Radio Buttons</source>
-        <comment>Firmware + Vendor</comment>
+        <comment>Non-ARB Firmware</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="376"/>
         <source>Radio Buttons</source>
-        <comment>Firmware-less ROM</comment>
+        <comment>Firmware + Vendor</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="377"/>
-        <source>Drop space</source>
-        <comment>Drop a file</comment>
+        <source>Radio Buttons</source>
+        <comment>Firmware-less ROM</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="378"/>
         <source>Drop space</source>
-        <comment>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Drop a rom zip file here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</comment>
+        <comment>Drop a file</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="384"/>
-        <source>Main Buttons</source>
-        <comment>Error</comment>
+        <location filename="../main.py" line="379"/>
+        <source>Drop space</source>
+        <comment>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Drop a rom zip file here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="385"/>
         <source>Main Buttons</source>
-        <comment>You must select a ROM zip first!</comment>
+        <comment>Error</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="386"/>
         <source>Main Buttons</source>
-        <comment>Select file</comment>
+        <comment>You must select a ROM zip first!</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="387"/>
         <source>Main Buttons</source>
-        <comment>Select MIUI Zip file</comment>
+        <comment>Select file</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="388"/>
         <source>Main Buttons</source>
-        <comment>Enter URL</comment>
+        <comment>Select MIUI Zip file</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="389"/>
         <source>Main Buttons</source>
-        <comment>Enter a URL of a Zip file</comment>
+        <comment>Enter URL</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="390"/>
         <source>Main Buttons</source>
-        <comment>Create</comment>
+        <comment>Enter a URL of a Zip file</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="391"/>
         <source>Main Buttons</source>
-        <comment>Create the selected output zip</comment>
+        <comment>Create</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="392"/>
-        <source>Menu bar</source>
-        <comment>File</comment>
+        <source>Main Buttons</source>
+        <comment>Create the selected output zip</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="393"/>
         <source>Menu bar</source>
-        <comment>Language</comment>
+        <comment>File</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="394"/>
         <source>Menu bar</source>
-        <comment>Help</comment>
+        <comment>Language</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="395"/>
         <source>Menu bar</source>
-        <comment>Open ZIP</comment>
+        <comment>Help</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="396"/>
         <source>Menu bar</source>
-        <comment>Select MIUI Zip file</comment>
+        <comment>Open ZIP</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="397"/>
         <source>Menu bar</source>
-        <comment>Enter URL</comment>
+        <comment>Select MIUI Zip file</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="398"/>
         <source>Menu bar</source>
-        <comment>Enter a URL of a Zip file</comment>
+        <comment>Enter URL</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="399"/>
         <source>Menu bar</source>
-        <comment>Quit</comment>
+        <comment>Enter a URL of a Zip file</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="400"/>
         <source>Menu bar</source>
-        <comment>Exits the application</comment>
+        <comment>Quit</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="401"/>
         <source>Menu bar</source>
-        <comment>Albanian</comment>
+        <comment>Exits the application</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="402"/>
         <source>Menu bar</source>
-        <comment>Arabic</comment>
+        <comment>Albanian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="403"/>
         <source>Menu bar</source>
-        <comment>Catalan</comment>
+        <comment>Arabic</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="404"/>
         <source>Menu bar</source>
-        <comment>Chinese Simplified</comment>
+        <comment>Catalan</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="405"/>
         <source>Menu bar</source>
-        <comment>Croatian</comment>
+        <comment>Chinese Simplified</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="406"/>
         <source>Menu bar</source>
-        <comment>Czech</comment>
+        <comment>Croatian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="407"/>
         <source>Menu bar</source>
-        <comment>Dutch</comment>
+        <comment>Czech</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="408"/>
         <source>Menu bar</source>
-        <comment>English</comment>
+        <comment>Dutch</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="409"/>
         <source>Menu bar</source>
-        <comment>French</comment>
+        <comment>English</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="410"/>
         <source>Menu bar</source>
-        <comment>German</comment>
+        <comment>French</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="411"/>
         <source>Menu bar</source>
-        <comment>Greek</comment>
+        <comment>German</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="412"/>
         <source>Menu bar</source>
-        <comment>Hindi</comment>
+        <comment>Greek</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="413"/>
         <source>Menu bar</source>
-        <comment>Indonesian</comment>
+        <comment>Hindi</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="414"/>
         <source>Menu bar</source>
-        <comment>Italian</comment>
+        <comment>Indonesian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="415"/>
         <source>Menu bar</source>
-        <comment>Malay</comment>
+        <comment>Italian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="416"/>
         <source>Menu bar</source>
-        <comment>Persian</comment>
+        <comment>Malay</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="417"/>
         <source>Menu bar</source>
-        <comment>Polish</comment>
+        <comment>Persian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="418"/>
         <source>Menu bar</source>
-        <comment>Portuguese, Brazilian</comment>
+        <comment>Polish</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="419"/>
         <source>Menu bar</source>
-        <comment>Romanian</comment>
+        <comment>Portuguese, Brazilian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="420"/>
         <source>Menu bar</source>
-        <comment>Russian</comment>
+        <comment>Romanian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="421"/>
         <source>Menu bar</source>
-        <comment>Slovenian</comment>
+        <comment>Russian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="422"/>
         <source>Menu bar</source>
-        <comment>Spanish</comment>
+        <comment>Slovenian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="423"/>
         <source>Menu bar</source>
-        <comment>Turkish</comment>
+        <comment>Spanish</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="424"/>
         <source>Menu bar</source>
-        <comment>Ukrainian</comment>
+        <comment>Turkish</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="425"/>
         <source>Menu bar</source>
-        <comment>Vietnamese</comment>
+        <comment>Ukrainian</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="426"/>
         <source>Menu bar</source>
-        <comment>Report Bug</comment>
+        <comment>Vietnamese</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="427"/>
         <source>Menu bar</source>
-        <comment>Submit an issue in case anything is wrong</comment>
+        <comment>Report Bug</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="429"/>
+        <location filename="../main.py" line="428"/>
         <source>Menu bar</source>
-        <comment>Donate</comment>
+        <comment>Submit an issue in case anything is wrong</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="430"/>
         <source>Menu bar</source>
-        <comment>Show us some love</comment>
+        <comment>Donate</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="431"/>
         <source>Menu bar</source>
-        <comment>About</comment>
+        <comment>Show us some love</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="432"/>
         <source>Menu bar</source>
-        <comment>About this tool</comment>
+        <comment>About</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="433"/>
         <source>Menu bar</source>
-        <comment>Website</comment>
+        <comment>About this tool</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="434"/>
         <source>Menu bar</source>
-        <comment>Visit tool website</comment>
+        <comment>Website</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.py" line="435"/>
+        <source>Menu bar</source>
+        <comment>Visit tool website</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="436"/>
         <source>Status Box</source>
         <comment>Ready</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="476"/>
+        <location filename="../main.py" line="477"/>
         <source>Select Files Dialog</source>
         <comment>Select MIUI zip</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="479"/>
+        <location filename="../main.py" line="477"/>
+        <source>Select Files Dialog</source>
+        <comment>MIUI zip files</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="482"/>
         <source>Status Box</source>
         <comment>Please select a file!</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="483"/>
+        <location filename="../main.py" line="486"/>
         <source>Status Box</source>
         <comment>File {self.filename} is selected</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../main.py" line="497"/>
+        <source>Enter URL Dialog</source>
+        <comment>Remote Zip URL</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main.py" line="498"/>
+        <source>Enter URL Dialog</source>
+        <comment>Enter a MIUI zip direct link:</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="499"/>
+        <source>Enter URL Dialog</source>
+        <comment>Set URL</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="500"/>
+        <source>Enter URL Dialog</source>
+        <comment>Cancel</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="504"/>
+        <source>Warning</source>
+        <comment>Not a valid URL.</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="508"/>
         <source>Status Box</source>
         <comment>Remote file {self.filename} is selected.</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="524"/>
+        <location filename="../main.py" line="534"/>
         <source>Status Box</source>
         <comment>Starting {process} job</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="531"/>
+        <location filename="../main.py" line="541"/>
         <source>Status Box</source>
         <comment>Detected {firmware_creator.type.name} device</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="534"/>
+        <location filename="../main.py" line="545"/>
         <source>Status Box</source>
         <comment>Unzipping MIUI... ({firmware_creator.type.name}) device</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="544"/>
+        <location filename="../main.py" line="555"/>
+        <source>Warning</source>
+        <comment>Unsupported operation for MTK!</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.py" line="557"/>
         <source>Status Box</source>
         <comment>Error: Unsupported operation for MTK!</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="552"/>
+        <location filename="../main.py" line="566"/>
         <source>Status Box</source>
         <comment>Generating updater-script...</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="556"/>
+        <location filename="../main.py" line="571"/>
         <source>Status Box</source>
         <comment>Creating zip..</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.py" line="562"/>
+        <location filename="../main.py" line="577"/>
         <source>Status Box</source>
         <comment>All Done! Output zip is {new_zip}</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.py" line="476"/>
-        <source>Select Files Dialog</source>
-        <comment>&quot;MIUI zip files</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>

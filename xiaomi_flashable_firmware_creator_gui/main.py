@@ -12,7 +12,7 @@ from PyQt5.QtWidgets import QGroupBox, QMainWindow, QWidget, QRadioButton, \
     QLabel, QFrame, QPushButton, QMenuBar, \
     QMessageBox, QTextEdit, QProgressBar, QMenu, QStatusBar, QAction, \
     QSizePolicy, qApp, QApplication, QDesktopWidget, \
-    QFileDialog, QInputDialog
+    QFileDialog, QInputDialog, QDialog
 
 from xiaomi_flashable_firmware_creator.firmware_creator import FlashableFirmwareCreator
 from xiaomi_flashable_firmware_creator_gui import current_dir
@@ -124,7 +124,7 @@ class MainWindowUi(QMainWindow):
         self.action_report_bug = QAction(self)
         self.action_website = QAction(self)
         # vars
-        self.filepath = Path()
+        self.filepath = None
         self.filename = ''
         # other windows
         self.about_box = AboutBox()
@@ -490,9 +490,16 @@ class MainWindowUi(QMainWindow):
         """
         Enter URL Dialog
         """
-        url, ok = QInputDialog.getText(self, self.tr('Enter URL Dialog', 'Remote Zip URL'),
-                                       self.tr('Enter URL Dialog', 'Enter a MIUI zip direct link:'))
-        if ok:
+        dialog = QInputDialog(self)
+        dialog.setInputMode(QInputDialog.TextInput)
+        dialog.setFixedSize(300, 100)
+        dialog.setOption(QInputDialog.UsePlainTextEditForTextInput)
+        dialog.setWindowTitle(self.tr('Enter URL Dialog', 'Remote Zip URL'))
+        dialog.setLabelText(self.tr('Enter URL Dialog', 'Enter a MIUI zip direct link:'))
+        dialog.setOkButtonText(self.tr('Enter URL Dialog', 'Set URL'))
+        dialog.setCancelButtonText(self.tr('Enter URL Dialog', 'Cancel'))
+        if dialog.exec_() == QDialog.Accepted:
+            url = dialog.textValue()
             if "http" not in url or "ota.d.miui.com" not in url:
                 QMessageBox.warning(self, "Error", self.tr('Warning', 'Not a valid URL.'))
                 return
