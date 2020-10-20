@@ -136,7 +136,7 @@ class MainWindowUi(QMainWindow):
         """
         GroupBox: process_type
         """
-        self.process_type.setGeometry(QRect(10, 20, 175, 140))
+        self.process_type.setGeometry(QRect(10, 20, 250, 140))
         self.process_type.setObjectName("process_type")
         self.btn_fw.setGeometry(QRect(10, 20, 160, 30))
         self.btn_fw.setObjectName("btn_fw")
@@ -153,10 +153,10 @@ class MainWindowUi(QMainWindow):
         """
         GroupBox: Drop files
         """
-        self.groupbox_drop.setGeometry(QRect(195, 20, 390, 140))
+        self.groupbox_drop.setGeometry(QRect(270, 20, 320, 140))
         self.groupbox_drop.setObjectName("groupbox_drop")
         self.groupbox_drop.setAcceptDrops(True)
-        self.label_drop.setGeometry(QRect(0, 30, 381, 111))
+        self.label_drop.setGeometry(QRect(0, 30, 320, 111))
         # self.label_drop.setFrameShape(QFrame.Box)
         # self.label_drop.setFrameShadow(QFrame.Sunken)
         # self.label_drop.setLineWidth(2)
