@@ -4,17 +4,22 @@
   <context encoding="UTF-8">
     <name>About Box</name>
     <message>
-      <location filename="../windows/about.py" line="126"/>
+      <location filename="../../components/about.py" line="121"/>
+      <source>Cancel</source>
+      <translation type="unfinished">Cancel</translation>
+    </message>
+    <message>
+      <location filename="../../components/about.py" line="134"/>
       <source>About </source>
       <translation>À propos </translation>
     </message>
     <message>
-      <location filename="../windows/about.py" line="127"/>
-      <source>Xiaomi Flashable Firmware Creator By Xiaomi Firmware Updater</source>
-      <translation>Xiaomi Flashable Firmware créé par Xiaomi Firmware Updater</translation>
+      <location filename="../../components/about.py" line="135"/>
+      <source>Xiaomi Flashable Firmware Creator</source>
+      <translation type="unfinished">Xiaomi Flashable Firmware Creator</translation>
     </message>
     <message encoding="UTF-8">
-      <location filename="../windows/about.py" line="129"/>
+      <location filename="../../components/about.py" line="137"/>
       <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
  &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -31,52 +36,52 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://xiaomifirmwareupdater.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;Xiaomi Firmware Updater&lt;/span&gt;&lt;/a&gt; est un projet communautaire, démarré en janvier 2018, vise à fournir des packages pour tous les appareils Xiaomi pour permettre à tous les utilisateurs de rom custom de mettre à jour leur firmware facilement, grâce au recovery custom, au lieu de flasher la rom complète à chaque mise à jour.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-      <location filename="../windows/about.py" line="178"/>
+      <location filename="../../components/about.py" line="186"/>
       <source>About</source>
       <translation>À propos</translation>
     </message>
     <message>
-      <location filename="../windows/about.py" line="180"/>
+      <location filename="../../components/about.py" line="188"/>
       <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Xiaomi Flashable Firmware Creator is a free and open source software, licensed under the GPL-3.0 (GNU GENERAL PUBLIC LICENSE) license.&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;It uses the following libraries:&lt;/p&gt;
-&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.13.0 (built against 5.13.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.15.0 (built against 5.15.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Xiaomi Flashable Firmware Creator est un programme gratuit et open source, sous license the GPL-3.0 (GNU GENERAL PUBLIC LICENSE).&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;il utilise les librairies suivantes:&lt;/p&gt;
-&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.13.0 (built against 5.13.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Xiaomi Flashable Firmware Creator is a free and open source software, licensed under the GPL-3.0 (GNU GENERAL PUBLIC LICENSE) license.&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;It uses the following libraries:&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.15.0 (built against 5.15.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-      <location filename="../windows/about.py" line="212"/>
+      <location filename="../../components/about.py" line="220"/>
       <source>Sources</source>
-      <translation>Sources</translation>
+      <translation type="unfinished">Sources</translation>
     </message>
     <message>
-      <location filename="../windows/about.py" line="214"/>
+      <location filename="../../components/about.py" line="222"/>
       <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/yshalsager&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;yshalsager&lt;/span&gt;&lt;/a&gt;  - Lead Developer&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+      <translation type="unfinished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://github.com/yshalsager&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#009dff;&quot;&gt;yshalsager&lt;/span&gt;&lt;/a&gt;  - Lead Developer&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-      <location filename="../windows/about.py" line="236"/>
+      <location filename="../../components/about.py" line="244"/>
       <source>Authors</source>
       <translation>Auteurs</translation>
     </message>
     <message encoding="UTF-8">
-      <location filename="../windows/about.py" line="238"/>
+      <location filename="../../components/about.py" line="246"/>
       <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -93,7 +98,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br/&gt;Et tout le monde qui a contribué et que j'ai oublié de mentionner&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-      <location filename="../windows/about.py" line="344"/>
+      <location filename="../../components/about.py" line="352"/>
       <source>Thanks To</source>
       <translation>Merci à</translation>
     </message>
@@ -101,45 +106,68 @@ p, li { white-space: pre-wrap; }
   <context>
     <name>Drop space</name>
     <message>
-      <location filename="../app.py" line="368"/>
+      <location filename="../../main.py" line="344"/>
       <source>Drop a file</source>
       <translation>Déposer un fichier</translation>
     </message>
     <message>
-      <location filename="../app.py" line="369"/>
+      <location filename="../../main.py" line="345"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Drop a rom zip file here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
       <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Déposer le fichier zip de la rom ici&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
   </context>
   <context>
+    <name>Enter URL Dialog</name>
+    <message>
+      <location filename="../../main.py" line="449"/>
+      <source>Remote Zip URL</source>
+      <translation type="unfinished">Remote Zip URL</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="449"/>
+      <source>Enter a MIUI zip direct link:</source>
+      <translation type="unfinished">Enter a MIUI zip direct link:</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="449"/>
+      <source>Set URL</source>
+      <translation type="unfinished">Set URL</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="449"/>
+      <source>Cancel</source>
+      <translation type="unfinished">Cancel</translation>
+    </message>
+  </context>
+  <context>
     <name>Main Buttons</name>
     <message>
-      <location filename="../app.py" line="378"/>
+      <location filename="../../main.py" line="351"/>
       <source>Select file</source>
       <translation>Sélectionner le fichier</translation>
     </message>
     <message>
-      <location filename="../app.py" line="376"/>
-      <source>Error</source>
-      <translation>Erreur</translation>
-    </message>
-    <message>
-      <location filename="../app.py" line="377"/>
-      <source>You must select a ROM zip first!</source>
-      <translation>Vous devez d'abord sélectionner un fichier zip contenant votre rom!</translation>
-    </message>
-    <message>
-      <location filename="../app.py" line="379"/>
+      <location filename="../../main.py" line="352"/>
       <source>Select MIUI Zip file</source>
       <translation>Sélectionner le fichier MIUI zip</translation>
     </message>
     <message>
-      <location filename="../app.py" line="380"/>
+      <location filename="../../main.py" line="353"/>
+      <source>Enter URL</source>
+      <translation type="unfinished">Enter URL</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="354"/>
+      <source>Enter a URL of a Zip file</source>
+      <translation type="unfinished">Enter a URL of a Zip file</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="355"/>
       <source>Create</source>
       <translation>Créer</translation>
     </message>
     <message>
-      <location filename="../app.py" line="381"/>
+      <location filename="../../main.py" line="356"/>
       <source>Create the selected output zip</source>
       <translation>Créer le zip de destination sélectionné</translation>
     </message>
@@ -147,248 +175,364 @@ p, li { white-space: pre-wrap; }
   <context>
     <name>Menu bar</name>
     <message>
-      <location filename="../app.py" line="382"/>
+      <location filename="../../main.py" line="357"/>
       <source>File</source>
       <translation>Fichier</translation>
     </message>
     <message>
-      <location filename="../app.py" line="383"/>
+      <location filename="../../main.py" line="358"/>
       <source>Language</source>
       <translation>Langue</translation>
     </message>
     <message>
-      <location filename="../app.py" line="384"/>
+      <location filename="../../main.py" line="359"/>
       <source>Help</source>
       <translation>Aide</translation>
     </message>
     <message>
-      <location filename="../app.py" line="385"/>
+      <location filename="../../main.py" line="360"/>
       <source>Open ZIP</source>
       <translation>Ouvrir ZIP</translation>
     </message>
     <message>
-      <location filename="../app.py" line="386"/>
+      <location filename="../../main.py" line="361"/>
       <source>Select MIUI Zip file</source>
       <translation>Sélectionner le fichier zip MIUI</translation>
     </message>
     <message>
-      <location filename="../app.py" line="387"/>
+      <location filename="../../main.py" line="362"/>
+      <source>Enter URL</source>
+      <translation type="unfinished">Enter URL</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="363"/>
+      <source>Enter a URL of a Zip file</source>
+      <translation type="unfinished">Enter a URL of a Zip file</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="364"/>
       <source>Quit</source>
       <translation>Quitter</translation>
     </message>
     <message>
-      <location filename="../app.py" line="388"/>
+      <location filename="../../main.py" line="365"/>
       <source>Exits the application</source>
       <translation>Quitter l'application</translation>
     </message>
     <message>
-      <location filename="../app.py" line="389"/>
+      <location filename="../../main.py" line="366"/>
       <source>Albanian</source>
       <translation>Albanais</translation>
     </message>
     <message>
-      <location filename="../app.py" line="390"/>
+      <location filename="../../main.py" line="367"/>
       <source>Arabic</source>
       <translation>Arabe</translation>
     </message>
     <message>
-      <location filename="../app.py" line="391"/>
+      <location filename="../../main.py" line="368"/>
       <source>Catalan</source>
-      <translation>Catalan</translation>
+      <translation type="unfinished">Catalan</translation>
     </message>
     <message>
-      <location filename="../app.py" line="392"/>
+      <location filename="../../main.py" line="369"/>
       <source>Chinese Simplified</source>
       <translation>Chinois simplifié</translation>
     </message>
     <message>
-      <location filename="../app.py" line="393"/>
+      <location filename="../../main.py" line="370"/>
       <source>Croatian</source>
       <translation>Croate</translation>
     </message>
     <message>
-      <location filename="../app.py" line="394"/>
+      <location filename="../../main.py" line="371"/>
       <source>Czech</source>
       <translation>Tchèque</translation>
     </message>
     <message>
-      <location filename="../app.py" line="395"/>
+      <location filename="../../main.py" line="372"/>
       <source>Dutch</source>
       <translation>Néerlandais</translation>
     </message>
     <message>
-      <location filename="../app.py" line="396"/>
+      <location filename="../../main.py" line="373"/>
       <source>English</source>
       <translation>Anglais</translation>
     </message>
     <message>
-      <location filename="../app.py" line="397"/>
+      <location filename="../../main.py" line="374"/>
       <source>French</source>
       <translation>Français</translation>
     </message>
     <message>
-      <location filename="../app.py" line="398"/>
+      <location filename="../../main.py" line="375"/>
       <source>German</source>
       <translation>Allemand</translation>
     </message>
     <message>
-      <location filename="../app.py" line="399"/>
+      <location filename="../../main.py" line="376"/>
       <source>Greek</source>
       <translation>Grec</translation>
     </message>
     <message>
-      <location filename="../app.py" line="400"/>
+      <location filename="../../main.py" line="377"/>
       <source>Hindi</source>
-      <translation>Hindi</translation>
+      <translation type="unfinished">Hindi</translation>
     </message>
     <message>
-      <location filename="../app.py" line="401"/>
+      <location filename="../../main.py" line="378"/>
       <source>Indonesian</source>
       <translation>Indonésien</translation>
     </message>
     <message>
-      <location filename="../app.py" line="402"/>
+      <location filename="../../main.py" line="379"/>
       <source>Italian</source>
       <translation>Italien</translation>
     </message>
     <message>
-      <location filename="../app.py" line="403"/>
+      <location filename="../../main.py" line="380"/>
       <source>Malay</source>
-      <translation>Malay</translation>
+      <translation type="unfinished">Malay</translation>
     </message>
     <message>
-      <location filename="../app.py" line="404"/>
+      <location filename="../../main.py" line="381"/>
       <source>Persian</source>
       <translation>Perse</translation>
     </message>
     <message>
-      <location filename="../app.py" line="405"/>
+      <location filename="../../main.py" line="382"/>
       <source>Polish</source>
       <translation>Polonais</translation>
     </message>
     <message>
-      <location filename="../app.py" line="406"/>
+      <location filename="../../main.py" line="383"/>
       <source>Portuguese, Brazilian</source>
       <translation>Portugais, Brésilien</translation>
     </message>
     <message>
-      <location filename="../app.py" line="407"/>
+      <location filename="../../main.py" line="384"/>
       <source>Romanian</source>
       <translation>Roumain</translation>
     </message>
     <message>
-      <location filename="../app.py" line="408"/>
+      <location filename="../../main.py" line="385"/>
       <source>Russian</source>
       <translation>Russe</translation>
     </message>
     <message>
-      <location filename="../app.py" line="409"/>
+      <location filename="../../main.py" line="386"/>
       <source>Slovenian</source>
       <translation>Slovène</translation>
     </message>
     <message>
-      <location filename="../app.py" line="410"/>
+      <location filename="../../main.py" line="387"/>
       <source>Spanish</source>
       <translation>Espagnol</translation>
     </message>
     <message>
-      <location filename="../app.py" line="411"/>
+      <location filename="../../main.py" line="388"/>
       <source>Turkish</source>
       <translation>Turque</translation>
     </message>
     <message>
-      <location filename="../app.py" line="412"/>
+      <location filename="../../main.py" line="389"/>
       <source>Ukrainian</source>
       <translation>Ukrainien</translation>
     </message>
     <message>
-      <location filename="../app.py" line="413"/>
+      <location filename="../../main.py" line="390"/>
       <source>Vietnamese</source>
       <translation>Vietnamien</translation>
     </message>
     <message>
-      <location filename="../app.py" line="414"/>
+      <location filename="../../main.py" line="391"/>
       <source>Report Bug</source>
       <translation>Rapport de bug</translation>
     </message>
     <message>
-      <location filename="../app.py" line="415"/>
+      <location filename="../../main.py" line="392"/>
       <source>Submit an issue in case anything is wrong</source>
       <translation>Soumettre une issue en cas de problème</translation>
     </message>
     <message>
-      <location filename="../app.py" line="417"/>
+      <location filename="../../main.py" line="394"/>
       <source>Donate</source>
       <translation>Faire un don</translation>
     </message>
     <message>
-      <location filename="../app.py" line="418"/>
+      <location filename="../../main.py" line="395"/>
       <source>Show us some love</source>
       <translation>Montrer nous votre amour</translation>
     </message>
     <message>
-      <location filename="../app.py" line="419"/>
+      <location filename="../../main.py" line="396"/>
       <source>About</source>
       <translation>À propos</translation>
     </message>
     <message>
-      <location filename="../app.py" line="420"/>
+      <location filename="../../main.py" line="397"/>
       <source>About this tool</source>
       <translation>À propos de cet outil</translation>
     </message>
     <message>
-      <location filename="../app.py" line="421"/>
+      <location filename="../../main.py" line="398"/>
       <source>Website</source>
       <translation>Site Web</translation>
     </message>
     <message>
-      <location filename="../app.py" line="422"/>
+      <location filename="../../main.py" line="399"/>
       <source>Visit tool website</source>
       <translation>Visiter le site web</translation>
     </message>
   </context>
   <context>
+    <name>Popup Message</name>
+    <message>
+      <location filename="../../main.py" line="519"/>
+      <source>Error</source>
+      <translation type="unfinished">Error</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="457"/>
+      <source>Not a valid URL.</source>
+      <translation type="unfinished">Not a valid URL.</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="545"/>
+      <source>OK</source>
+      <translation type="unfinished">OK</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="478"/>
+      <source>You must select a ROM zip first!</source>
+      <translation type="unfinished">You must select a ROM zip first!</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="519"/>
+      <source>Unsupported operation for MTK!</source>
+      <translation type="unfinished">Unsupported operation for MTK!</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="545"/>
+      <source>Done</source>
+      <translation type="unfinished">Done</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="545"/>
+      <source>All Done! Output zip is {new_zip}</source>
+      <translation type="unfinished">All Done! Output zip is {new_zip}</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="545"/>
+      <source>Show in folder</source>
+      <translation type="unfinished">Show in folder</translation>
+    </message>
+  </context>
+  <context>
     <name>Radio Buttons</name>
     <message>
-      <location filename="../app.py" line="363"/>
+      <location filename="../../main.py" line="339"/>
       <source>Process</source>
       <translation>Processus</translation>
     </message>
     <message>
-      <location filename="../app.py" line="364"/>
+      <location filename="../../main.py" line="340"/>
       <source>Firmware</source>
-      <translation>Firmware</translation>
+      <translation type="unfinished">Firmware</translation>
     </message>
     <message>
-      <location filename="../app.py" line="365"/>
+      <location filename="../../main.py" line="341"/>
       <source>Non-ARB Firmware</source>
       <translation>Firware non-ARB</translation>
     </message>
     <message>
-      <location filename="../app.py" line="366"/>
+      <location filename="../../main.py" line="342"/>
       <source>Firmware + Vendor</source>
-      <translation>Firmware + Vendor</translation>
+      <translation type="unfinished">Firmware + Vendor</translation>
     </message>
     <message>
-      <location filename="../app.py" line="367"/>
+      <location filename="../../main.py" line="343"/>
       <source>Firmware-less ROM</source>
       <translation>Rom Firmware-less</translation>
     </message>
   </context>
   <context>
+    <name>Select Files Dialog</name>
+    <message>
+      <location filename="../../main.py" line="431"/>
+      <source>Select MIUI zip</source>
+      <translation type="unfinished">Select MIUI zip</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="431"/>
+      <source>MIUI zip files</source>
+      <translation type="unfinished">MIUI zip files</translation>
+    </message>
+  </context>
+  <context>
     <name>Status Box</name>
     <message>
-      <location filename="../app.py" line="423"/>
+      <location filename="../../main.py" line="555"/>
       <source>Ready</source>
       <translation>Prêt</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="437"/>
+      <source>Please select a file!</source>
+      <translation type="unfinished">Please select a file!</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="442"/>
+      <source>File {self.filename} is selected</source>
+      <translation type="unfinished">File {self.filename} is selected</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="467"/>
+      <source>Remote file {self.filename} is selected.</source>
+      <translation type="unfinished">Remote file {self.filename} is selected.</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="498"/>
+      <source>Starting {process} job</source>
+      <translation type="unfinished">Starting {process} job</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="505"/>
+      <source>Detected {firmware_creator.type.name} device</source>
+      <translation type="unfinished">Detected {firmware_creator.type.name} device</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="509"/>
+      <source>Unzipping MIUI... ({firmware_creator.type.name}) device</source>
+      <translation type="unfinished">Unzipping MIUI... ({firmware_creator.type.name}) device</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="524"/>
+      <source>Error: Unsupported operation for MTK!</source>
+      <translation type="unfinished">Error: Unsupported operation for MTK!</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="533"/>
+      <source>Generating updater-script...</source>
+      <translation type="unfinished">Generating updater-script...</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="538"/>
+      <source>Creating zip..</source>
+      <translation type="unfinished">Creating zip..</translation>
+    </message>
+    <message>
+      <location filename="../../components/drop_space.py" line="47"/>
+      <source>File {cls.filename} is selected</source>
+      <translation type="unfinished">File {cls.filename} is selected</translation>
     </message>
   </context>
   <context>
     <name>Title</name>
     <message>
-      <location filename="../app.py" line="360"/>
-      <source>Xiaomi Flashable Firmware Creator by XiaomiFirmwareUpdater</source>
-      <translation>Xiaomi Flashable Firmware Creator par XiaomiFirmwareUpdater</translation>
+      <location filename="../../main.py" line="337"/>
+      <source>Xiaomi Flashable Firmware Creator</source>
+      <translation type="unfinished">Xiaomi Flashable Firmware Creator</translation>
     </message>
   </context>
 </TS>
