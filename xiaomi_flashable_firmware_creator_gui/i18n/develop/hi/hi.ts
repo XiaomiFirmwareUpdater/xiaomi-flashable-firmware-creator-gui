@@ -6,7 +6,7 @@
     <message>
       <location filename="../../components/about.py" line="121"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>रद्द करें</translation>
     </message>
     <message>
       <location filename="../../components/about.py" line="134"/>
@@ -16,7 +16,7 @@
     <message>
       <location filename="../../components/about.py" line="135"/>
       <source>Xiaomi Flashable Firmware Creator</source>
-      <translation type="unfinished">Xiaomi Flashable Firmware Creator</translation>
+      <translation>शियाओमी फ्लाशेबल फर्मवेयर क्रिएटर</translation>
     </message>
     <message encoding="UTF-8">
       <location filename="../../components/about.py" line="137"/>
@@ -108,12 +108,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="344"/>
       <source>Drop a file</source>
-      <translation>एक फ़ाइल ड्रॉप करें</translation>
+      <translation>एक फ़ाइल चुने</translation>
     </message>
     <message>
       <location filename="../../main.py" line="345"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Drop a rom zip file here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Drop a rom zip file here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;ROM ज़िप फाइल को यह ड़ाले&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
   </context>
   <context>
@@ -121,22 +121,22 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Remote Zip URL</source>
-      <translation type="unfinished">Remote Zip URL</translation>
+      <translation>रिमोट ज़िप लिंक</translation>
     </message>
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Enter a MIUI zip direct link:</source>
-      <translation type="unfinished">Enter a MIUI zip direct link:</translation>
+      <translation>डायरेक्ट MIUI ज़िप लिंक यहां ड़ाले</translation>
     </message>
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Set URL</source>
-      <translation type="unfinished">Set URL</translation>
+      <translation>URL सेट करें</translation>
     </message>
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>रद्द करें</translation>
     </message>
   </context>
   <context>
@@ -154,12 +154,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="353"/>
       <source>Enter URL</source>
-      <translation type="unfinished">Enter URL</translation>
+      <translation>URL डालें</translation>
     </message>
     <message>
       <location filename="../../main.py" line="354"/>
       <source>Enter a URL of a Zip file</source>
-      <translation type="unfinished">Enter a URL of a Zip file</translation>
+      <translation>ज़िप फ़ाइल का URL डालें</translation>
     </message>
     <message>
       <location filename="../../main.py" line="355"/>
@@ -169,7 +169,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="356"/>
       <source>Create the selected output zip</source>
-      <translation type="unfinished">Create the selected output zip</translation>
+      <translation>चयनित आउटपुट ज़िप बनाएं</translation>
     </message>
   </context>
   <context>
@@ -202,12 +202,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="362"/>
       <source>Enter URL</source>
-      <translation type="unfinished">Enter URL</translation>
+      <translation>URL डालें</translation>
     </message>
     <message>
       <location filename="../../main.py" line="363"/>
       <source>Enter a URL of a Zip file</source>
-      <translation type="unfinished">Enter a URL of a Zip file</translation>
+      <translation>ज़िप फ़ाइल का URL डालें</translation>
     </message>
     <message>
       <location filename="../../main.py" line="364"/>
@@ -232,7 +232,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="368"/>
       <source>Catalan</source>
-      <translation type="unfinished">Catalan</translation>
+      <translation>कैटलन</translation>
     </message>
     <message>
       <location filename="../../main.py" line="369"/>
@@ -247,12 +247,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="371"/>
       <source>Czech</source>
-      <translation type="unfinished">Czech</translation>
+      <translation>ज़ेक</translation>
     </message>
     <message>
       <location filename="../../main.py" line="372"/>
       <source>Dutch</source>
-      <translation type="unfinished">Dutch</translation>
+      <translation>डच</translation>
     </message>
     <message>
       <location filename="../../main.py" line="373"/>
@@ -272,12 +272,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="376"/>
       <source>Greek</source>
-      <translation type="unfinished">Greek</translation>
+      <translation>ग्रीक</translation>
     </message>
     <message>
       <location filename="../../main.py" line="377"/>
       <source>Hindi</source>
-      <translation type="unfinished">Hindi</translation>
+      <translation>हिंदी</translation>
     </message>
     <message>
       <location filename="../../main.py" line="378"/>
@@ -322,7 +322,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="386"/>
       <source>Slovenian</source>
-      <translation>स्लोवेनियाई</translation>
+      <translation>स्लोवेनिया</translation>
     </message>
     <message>
       <location filename="../../main.py" line="387"/>
@@ -337,17 +337,17 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="389"/>
       <source>Ukrainian</source>
-      <translation>यूक्रेनियाई</translation>
+      <translation>यूक्रेनी</translation>
     </message>
     <message>
       <location filename="../../main.py" line="390"/>
       <source>Vietnamese</source>
-      <translation type="unfinished">Vietnamese</translation>
+      <translation>वियतनामी</translation>
     </message>
     <message>
       <location filename="../../main.py" line="391"/>
       <source>Report Bug</source>
-      <translation>रिपोर्ट बग</translation>
+      <translation>दोष दर्ज करें</translation>
     </message>
     <message>
       <location filename="../../main.py" line="392"/>
@@ -362,7 +362,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="395"/>
       <source>Show us some love</source>
-      <translation type="unfinished">Show us some love</translation>
+      <translation>हमें अपने प्यार दिखाएं</translation>
     </message>
     <message>
       <location filename="../../main.py" line="396"/>
@@ -390,42 +390,42 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="519"/>
       <source>Error</source>
-      <translation type="unfinished">Error</translation>
+      <translation>एरर!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="457"/>
       <source>Not a valid URL.</source>
-      <translation type="unfinished">Not a valid URL.</translation>
+      <translation>एक मान्य URL दर्ज करें।</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>OK</source>
-      <translation type="unfinished">OK</translation>
+      <translation>ठीक है</translation>
     </message>
     <message>
       <location filename="../../main.py" line="478"/>
       <source>You must select a ROM zip first!</source>
-      <translation type="unfinished">You must select a ROM zip first!</translation>
+      <translation>आपको पहले किसी रोम ज़िप फ़ाइल का चयन करना होगा।</translation>
     </message>
     <message>
       <location filename="../../main.py" line="519"/>
       <source>Unsupported operation for MTK!</source>
-      <translation type="unfinished">Unsupported operation for MTK!</translation>
+      <translation>असमर्थित MTK ऑपरेशन!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>Done</source>
-      <translation type="unfinished">Done</translation>
+      <translation>समाप्त</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>All Done! Output zip is {new_zip}</source>
-      <translation type="unfinished">All Done! Output zip is {new_zip}</translation>
+      <translation>कार्य संपोर्णता! उत्पादित ज़िप फ़ाइल {new_zip}</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>Show in folder</source>
-      <translation type="unfinished">Show in folder</translation>
+      <translation>फोल्डर में दिखाएं</translation>
     </message>
   </context>
   <context>
@@ -461,12 +461,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="431"/>
       <source>Select MIUI zip</source>
-      <translation type="unfinished">Select MIUI zip</translation>
+      <translation>MIUI zip फ़ाइल का चयन करें</translation>
     </message>
     <message>
       <location filename="../../main.py" line="431"/>
       <source>MIUI zip files</source>
-      <translation type="unfinished">MIUI zip files</translation>
+      <translation>MIUI ज़िप फ़ाइल</translation>
     </message>
   </context>
   <context>
@@ -479,52 +479,52 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="437"/>
       <source>Please select a file!</source>
-      <translation type="unfinished">Please select a file!</translation>
+      <translation>कृपया एक फाइल चुनें!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="442"/>
       <source>File {self.filename} is selected</source>
-      <translation type="unfinished">File {self.filename} is selected</translation>
+      <translation>फ़ाइल {self.filename} चुना गया</translation>
     </message>
     <message>
       <location filename="../../main.py" line="467"/>
       <source>Remote file {self.filename} is selected.</source>
-      <translation type="unfinished">Remote file {self.filename} is selected.</translation>
+      <translation>रिमोट फ़ाइल {self.filename} चुना गया।</translation>
     </message>
     <message>
       <location filename="../../main.py" line="498"/>
       <source>Starting {process} job</source>
-      <translation type="unfinished">Starting {process} job</translation>
+      <translation>काम {process} चालू</translation>
     </message>
     <message>
       <location filename="../../main.py" line="505"/>
       <source>Detected {firmware_creator.type.name} device</source>
-      <translation type="unfinished">Detected {firmware_creator.type.name} device</translation>
+      <translation>युक्ति {firmware_creator.type.name} चुना गया</translation>
     </message>
     <message>
       <location filename="../../main.py" line="509"/>
       <source>Unzipping MIUI... ({firmware_creator.type.name}) device</source>
-      <translation type="unfinished">Unzipping MIUI... ({firmware_creator.type.name}) device</translation>
+      <translation>MIUI फ़ाइल अनज़िप किया जा रहा है ({firmware_creator.type.name}) युक्ति</translation>
     </message>
     <message>
       <location filename="../../main.py" line="524"/>
       <source>Error: Unsupported operation for MTK!</source>
-      <translation type="unfinished">Error: Unsupported operation for MTK!</translation>
+      <translation>एरर: असमर्थित MTK ऑपरेशन!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="533"/>
       <source>Generating updater-script...</source>
-      <translation type="unfinished">Generating updater-script...</translation>
+      <translation>अपडेटर-स्क्रिप्ट रचन कार्य जारी...</translation>
     </message>
     <message>
       <location filename="../../main.py" line="538"/>
       <source>Creating zip..</source>
-      <translation type="unfinished">Creating zip..</translation>
+      <translation>ज़िप फ़ाइल की रचान जारी</translation>
     </message>
     <message>
       <location filename="../../components/drop_space.py" line="47"/>
       <source>File {cls.filename} is selected</source>
-      <translation type="unfinished">File {cls.filename} is selected</translation>
+      <translation>फ़ाइल {cls.filename} चुना गया</translation>
     </message>
   </context>
   <context>
@@ -532,7 +532,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="337"/>
       <source>Xiaomi Flashable Firmware Creator</source>
-      <translation type="unfinished">Xiaomi Flashable Firmware Creator</translation>
+      <translation>शियाओमी फ्लाशेबल फर्मवेयर क्रिएटर</translation>
     </message>
   </context>
 </TS>

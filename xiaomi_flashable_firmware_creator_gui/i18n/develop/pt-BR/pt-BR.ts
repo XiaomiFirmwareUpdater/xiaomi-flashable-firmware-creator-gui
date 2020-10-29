@@ -6,7 +6,7 @@
     <message>
       <location filename="../../components/about.py" line="121"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>Cancelar</translation>
     </message>
     <message>
       <location filename="../../components/about.py" line="134"/>
@@ -16,7 +16,7 @@
     <message>
       <location filename="../../components/about.py" line="135"/>
       <source>Xiaomi Flashable Firmware Creator</source>
-      <translation type="unfinished">Xiaomi Flashable Firmware Creator</translation>
+      <translation>Criador de Firmware Xiaomi Flashable</translation>
     </message>
     <message encoding="UTF-8">
       <location filename="../../components/about.py" line="137"/>
@@ -50,13 +50,13 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Xiaomi Flashable Firmware Creator is a free and open source software, licensed under the GPL-3.0 (GNU GENERAL PUBLIC LICENSE) license.&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;It uses the following libraries:&lt;/p&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.15.0 (built against 5.15.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+      <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Xiaomi Flashable Firmware Creator is a free and open source software, licensed under the GPL-3.0 (GNU GENERAL PUBLIC LICENSE) license.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Xiaomi Flashable Firmware Creator é um software gratuito e de código aberto, licenciado sob a GPL-3.0 (GNU GENERAL PUBLIC LICENSE).&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;It uses the following libraries:&lt;/p&gt;
-&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.15.0 (built against 5.15.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;PyQt 5.13.0 (built against 5.13.0)&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../../components/about.py" line="220"/>
@@ -122,22 +122,22 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Remote Zip URL</source>
-      <translation type="unfinished">Remote Zip URL</translation>
+      <translation>URL do Zip Remoto</translation>
     </message>
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Enter a MIUI zip direct link:</source>
-      <translation type="unfinished">Enter a MIUI zip direct link:</translation>
+      <translation>Digite um link direto do zip da MIUI:</translation>
     </message>
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Set URL</source>
-      <translation type="unfinished">Set URL</translation>
+      <translation>Definir uma URL</translation>
     </message>
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>Cancelar</translation>
     </message>
   </context>
   <context>
@@ -155,12 +155,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="353"/>
       <source>Enter URL</source>
-      <translation type="unfinished">Enter URL</translation>
+      <translation>Inserir URL</translation>
     </message>
     <message>
       <location filename="../../main.py" line="354"/>
       <source>Enter a URL of a Zip file</source>
-      <translation type="unfinished">Enter a URL of a Zip file</translation>
+      <translation>Insira uma URL para o arquivo Zip</translation>
     </message>
     <message>
       <location filename="../../main.py" line="355"/>
@@ -183,7 +183,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="358"/>
       <source>Language</source>
-      <translation>Linguagem</translation>
+      <translation>Idioma</translation>
     </message>
     <message>
       <location filename="../../main.py" line="359"/>
@@ -203,12 +203,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="362"/>
       <source>Enter URL</source>
-      <translation type="unfinished">Enter URL</translation>
+      <translation>Inserir URL</translation>
     </message>
     <message>
       <location filename="../../main.py" line="363"/>
       <source>Enter a URL of a Zip file</source>
-      <translation type="unfinished">Enter a URL of a Zip file</translation>
+      <translation>Insira uma URL para o arquivo Zip</translation>
     </message>
     <message>
       <location filename="../../main.py" line="364"/>
@@ -391,42 +391,42 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="519"/>
       <source>Error</source>
-      <translation type="unfinished">Error</translation>
+      <translation>Erro</translation>
     </message>
     <message>
       <location filename="../../main.py" line="457"/>
       <source>Not a valid URL.</source>
-      <translation type="unfinished">Not a valid URL.</translation>
+      <translation>Não é uma URL válida.</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>OK</source>
-      <translation type="unfinished">OK</translation>
+      <translation>OK</translation>
     </message>
     <message>
       <location filename="../../main.py" line="478"/>
       <source>You must select a ROM zip first!</source>
-      <translation type="unfinished">You must select a ROM zip first!</translation>
+      <translation>Você deve selecionar um arquivo zip de uma ROM primeiro!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="519"/>
       <source>Unsupported operation for MTK!</source>
-      <translation type="unfinished">Unsupported operation for MTK!</translation>
+      <translation>Operação não suportada para MTK!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>Done</source>
-      <translation type="unfinished">Done</translation>
+      <translation>Concluído</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>All Done! Output zip is {new_zip}</source>
-      <translation type="unfinished">All Done! Output zip is {new_zip}</translation>
+      <translation>Tudo pronto! O arquivo zip de saída é {new_zip}</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>Show in folder</source>
-      <translation type="unfinished">Show in folder</translation>
+      <translation>Mostrar na pasta</translation>
     </message>
   </context>
   <context>
@@ -462,12 +462,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="431"/>
       <source>Select MIUI zip</source>
-      <translation type="unfinished">Select MIUI zip</translation>
+      <translation>Selecione o arquivo zip da MIUI</translation>
     </message>
     <message>
       <location filename="../../main.py" line="431"/>
       <source>MIUI zip files</source>
-      <translation type="unfinished">MIUI zip files</translation>
+      <translation>Arquivos zip MIUI</translation>
     </message>
   </context>
   <context>
@@ -480,52 +480,52 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="437"/>
       <source>Please select a file!</source>
-      <translation type="unfinished">Please select a file!</translation>
+      <translation>Por favor, selecione um arquivo!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="442"/>
       <source>File {self.filename} is selected</source>
-      <translation type="unfinished">File {self.filename} is selected</translation>
+      <translation>O arquivo {self.filename} está selecionado</translation>
     </message>
     <message>
       <location filename="../../main.py" line="467"/>
       <source>Remote file {self.filename} is selected.</source>
-      <translation type="unfinished">Remote file {self.filename} is selected.</translation>
+      <translation>Arquivo remoto {self.filename} está selecionado.</translation>
     </message>
     <message>
       <location filename="../../main.py" line="498"/>
       <source>Starting {process} job</source>
-      <translation type="unfinished">Starting {process} job</translation>
+      <translation>Iniciando o trabalho {process}</translation>
     </message>
     <message>
       <location filename="../../main.py" line="505"/>
       <source>Detected {firmware_creator.type.name} device</source>
-      <translation type="unfinished">Detected {firmware_creator.type.name} device</translation>
+      <translation>Dispositivo detectado {firmware_creator.type.name}</translation>
     </message>
     <message>
       <location filename="../../main.py" line="509"/>
       <source>Unzipping MIUI... ({firmware_creator.type.name}) device</source>
-      <translation type="unfinished">Unzipping MIUI... ({firmware_creator.type.name}) device</translation>
+      <translation>Descompactando o dispositivo MIUI... ({firmware_creator.type.name})</translation>
     </message>
     <message>
       <location filename="../../main.py" line="524"/>
       <source>Error: Unsupported operation for MTK!</source>
-      <translation type="unfinished">Error: Unsupported operation for MTK!</translation>
+      <translation>Erro: operação não suportada para MTK!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="533"/>
       <source>Generating updater-script...</source>
-      <translation type="unfinished">Generating updater-script...</translation>
+      <translation>Gerando script de atualização...</translation>
     </message>
     <message>
       <location filename="../../main.py" line="538"/>
       <source>Creating zip..</source>
-      <translation type="unfinished">Creating zip..</translation>
+      <translation>Criando zip..</translation>
     </message>
     <message>
       <location filename="../../components/drop_space.py" line="47"/>
       <source>File {cls.filename} is selected</source>
-      <translation type="unfinished">File {cls.filename} is selected</translation>
+      <translation>O arquivo {cls.filename} está selecionado</translation>
     </message>
   </context>
   <context>
@@ -533,7 +533,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="337"/>
       <source>Xiaomi Flashable Firmware Creator</source>
-      <translation type="unfinished">Xiaomi Flashable Firmware Creator</translation>
+      <translation>Criador de Firmware Xiaomi Flashable</translation>
     </message>
   </context>
 </TS>

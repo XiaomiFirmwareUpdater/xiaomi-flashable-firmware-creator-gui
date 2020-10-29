@@ -6,7 +6,7 @@
     <message>
       <location filename="../../components/about.py" line="121"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>Batal</translation>
     </message>
     <message>
       <location filename="../../components/about.py" line="134"/>
@@ -126,12 +126,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Enter a MIUI zip direct link:</source>
-      <translation type="unfinished">Enter a MIUI zip direct link:</translation>
+      <translation>Masukkan link langsung zip MIUI:</translation>
     </message>
     <message>
       <location filename="../../main.py" line="449"/>
       <source>Set URL</source>
-      <translation type="unfinished">Set URL</translation>
+      <translation>Tetapkan URL</translation>
     </message>
     <message>
       <location filename="../../main.py" line="449"/>
@@ -159,7 +159,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="354"/>
       <source>Enter a URL of a Zip file</source>
-      <translation type="unfinished">Enter a URL of a Zip file</translation>
+      <translation>Masukkan URL untuk fail zip</translation>
     </message>
     <message>
       <location filename="../../main.py" line="355"/>
@@ -395,12 +395,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="457"/>
       <source>Not a valid URL.</source>
-      <translation type="unfinished">Not a valid URL.</translation>
+      <translation>URL tidak sah.</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>OK</source>
-      <translation type="unfinished">OK</translation>
+      <translation>Ok</translation>
     </message>
     <message>
       <location filename="../../main.py" line="478"/>
@@ -410,7 +410,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="519"/>
       <source>Unsupported operation for MTK!</source>
-      <translation type="unfinished">Unsupported operation for MTK!</translation>
+      <translation>Operasi tidak menyokong untuk MTK!</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
@@ -420,12 +420,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="545"/>
       <source>All Done! Output zip is {new_zip}</source>
-      <translation type="unfinished">All Done! Output zip is {new_zip}</translation>
+      <translation>Berjaya! Hasil zip adalah {zip_baru}</translation>
     </message>
     <message>
       <location filename="../../main.py" line="545"/>
       <source>Show in folder</source>
-      <translation type="unfinished">Show in folder</translation>
+      <translation>Tunjuk di dalam fail</translation>
     </message>
   </context>
   <context>
@@ -438,7 +438,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="340"/>
       <source>Firmware</source>
-      <translation type="unfinished">Firmware</translation>
+      <translation>Perisian tegar</translation>
     </message>
     <message>
       <location filename="../../main.py" line="341"/>
@@ -466,7 +466,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="431"/>
       <source>MIUI zip files</source>
-      <translation type="unfinished">MIUI zip files</translation>
+      <translation>Fail fail zip MIUI</translation>
     </message>
   </context>
   <context>
@@ -484,7 +484,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../main.py" line="442"/>
       <source>File {self.filename} is selected</source>
-      <translation type="unfinished">File {self.filename} is selected</translation>
+      <translation>Fail "{sendiri.namafail}" telah dipilih</translation>
     </message>
     <message>
       <location filename="../../main.py" line="467"/>

@@ -16,7 +16,7 @@
     <message>
       <location filename="../../components/about.py" line="135"/>
       <source>Xiaomi Flashable Firmware Creator</source>
-      <translation>Xiaomi Flaşlanabilir Yazılım Oluşturucu</translation>
+      <translation>Xiaomi Yüklenebilir Yazılım Yaratıcısı</translation>
     </message>
     <message encoding="UTF-8">
       <location filename="../../components/about.py" line="137"/>
