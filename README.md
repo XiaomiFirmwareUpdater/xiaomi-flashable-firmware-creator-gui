@@ -37,11 +37,11 @@ pip install xiaomi_flashable_firmware_creator_gui
 **Manual Installation**
 
 *   Clone this repo using `git clone`
-*   Make sure that you have Python3 installed on your device.
-*   Install the required packages.
+*   Make sure that you have Python3 installed with pip version higher than 19 on your device.
+*   Install the required packages by running the following command in cloned repo folder.
 
 ```shell script
-pip3 install -r requirements.txt
+pip3 install .
 ```
 
 ### GUI Usage:
