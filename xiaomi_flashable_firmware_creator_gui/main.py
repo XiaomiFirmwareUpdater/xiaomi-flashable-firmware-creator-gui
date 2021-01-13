@@ -503,11 +503,7 @@ class MainWindowUi(QMainWindow):
         logging.info(f'Starting extract job')
         self.progress_bar.setValue(5)
         self.status_box.setText(
-            self._translate("Status Box", f"Detected {firmware_creator.type.name} device"))
-        logging.info(f'Detected {firmware_creator.type.name} device')
-        self.progress_bar.setValue(10)
-        self.status_box.setText(
-            self._translate("Status Box", f"Unzipping MIUI... ({firmware_creator.type.name}) device"))
+            self._translate("Status Box", f"Unzipping MIUI ROM..."))
         self.progress_bar.setValue(20)
         logging.info(f'Unzipping {self.filename}')
         extracted = False

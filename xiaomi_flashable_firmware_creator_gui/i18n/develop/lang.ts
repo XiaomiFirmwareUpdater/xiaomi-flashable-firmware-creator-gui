@@ -355,62 +355,104 @@ p, li { white-space: pre-wrap; }
         <location filename="../../main.py" line="398"/>
         <source>Website</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="399"/>
-        <source>Visit tool website</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Popup Message</name>
-    <message>
-        <location filename="../../main.py" line="519"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="457"/>
-        <source>Not a valid URL.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="545"/>
-        <source>OK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="478"/>
-        <source>You must select a ROM zip first!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="519"/>
-        <source>Unsupported operation for MTK!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="545"/>
-        <source>Done</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="545"/>
-        <source>All Done! Output zip is {new_zip}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="545"/>
-        <source>Show in folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Radio Buttons</name>
-    <message>
-        <location filename="../../main.py" line="339"/>
-        <source>Process</source>
-        <translation type="unfinished"></translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "399" / >
+    <source>Visit
+tool
+website < /source>
+< translation
+type = "unfinished" > </translation>
+    < /message>
+    < /context>
+    < context >
+    <name>Popup
+Message < /name>
+< message >
+<location filename = "../../main.py"
+line = "515" / >
+    <source>Error < /source>
+    < translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "457" / >
+    <source>Not
+a
+valid
+URL. < /source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "541" / >
+    <source>OK < /source>
+    < translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "478" / >
+    <source>You
+must
+select
+a
+ROM
+zip
+first! < /source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "515" / >
+    <source>Unsupported
+operation
+for MTK! < /source>
+    < translation type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "541" / >
+    <source>Done < /source>
+    < translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "541" / >
+    <source>All
+Done!
+Output
+zip
+is
+{
+    new_zip
+}
+</source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "541" / >
+    <source>Show in folder < /source>
+    < translation
+type = "unfinished" > </translation>
+    < /message>
+    < /context>
+    < context >
+    <name>Radio
+Buttons < /name>
+< message >
+<location filename = "../../main.py"
+line = "339" / >
+    <source>Process < /source>
+    < translation
+type = "unfinished" > </translation>
     </message>
     <message>
         <location filename="../../main.py" line="340"/>
@@ -439,77 +481,130 @@ p, li { white-space: pre-wrap; }
         <location filename="../../main.py" line="431"/>
         <source>Select MIUI zip</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="431"/>
-        <source>MIUI zip files</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Status Box</name>
-    <message>
-        <location filename="../../main.py" line="555"/>
-        <source>Ready</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="437"/>
-        <source>Please select a file!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="442"/>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "431" / >
+    <source>MIUI
+zip
+files < /source>
+< translation
+type = "unfinished" > </translation>
+    < /message>
+    < /context>
+    < context >
+    <name>Status
+Box < /name>
+< message >
+<location filename = "../../main.py"
+line = "551" / >
+    <source>Ready < /source>
+    < translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "437" / >
+    <source>Please
+select
+a
+file! < /source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "442" / >
         <source>File {self.filename} is selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../main.py" line="467"/>
-        <source>Remote file {self.filename} is selected.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="498"/>
-        <source>Starting {process} job</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="505"/>
-        <source>Detected {firmware_creator.type.name} device</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="509"/>
-        <source>Unzipping MIUI... ({firmware_creator.type.name}) device</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="524"/>
-        <source>Error: Unsupported operation for MTK!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="533"/>
-        <source>Generating updater-script...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../main.py" line="538"/>
-        <source>Creating zip..</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../components/drop_space.py" line="47"/>
-        <source>File {cls.filename} is selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Title</name>
-    <message>
-        <location filename="../../main.py" line="337"/>
-        <source>Xiaomi Flashable Firmware Creator</source>
-        <translation type="unfinished"></translation>
-    </message>
+<location filename = "../../main.py"
+line = "467" / >
+    <source>Remote
+file
+{
+    self.filename
+}
+is
+selected. < /source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "498" / >
+    <source>Starting
+{
+    process
+}
+job < /source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "520" / >
+    <source>Error
+:
+Unsupported
+operation
+for MTK! < /source>
+    < translation type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "529" / >
+    <source>Generating
+updater - script
+...
+</source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "534" / >
+    <source>Creating
+zip.. < /source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../components/drop_space.py"
+line = "47" / >
+    <source>File
+{
+    cls.filename
+}
+is
+selected < /source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< message >
+<location filename = "../../main.py"
+line = "505" / >
+    <source>Unzipping
+MIUI
+ROM
+...
+</source>
+< translation
+type = "unfinished" > </translation>
+< /message>
+< /context>
+< context >
+<name>Title < /name>
+< message >
+<location filename = "../../main.py"
+line = "337" / >
+    <source>Xiaomi
+Flashable
+Firmware
+Creator < /source>
+< translation
+type = "unfinished" > </translation>
+    < /message>
 </context>
 </TS>
