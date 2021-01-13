@@ -388,7 +388,7 @@ p, li { white-space: pre-wrap; }
   <context>
     <name>Popup Message</name>
     <message>
-      <location filename="../../main.py" line="519"/>
+      <location filename="../../main.py" line="515"/>
       <source>Error</source>
       <translation>Hata</translation>
     </message>
@@ -398,7 +398,7 @@ p, li { white-space: pre-wrap; }
       <translation>Geçerli bir URL değil.</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="545"/>
+      <location filename="../../main.py" line="541"/>
       <source>OK</source>
       <translation>Tamam</translation>
     </message>
@@ -408,22 +408,22 @@ p, li { white-space: pre-wrap; }
       <translation>İlk önce bir ROM zipi seçmelisiniz!</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="519"/>
+      <location filename="../../main.py" line="515"/>
       <source>Unsupported operation for MTK!</source>
       <translation>MTK cihazlar için desteklenmeyen bir işlem!</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="545"/>
+      <location filename="../../main.py" line="541"/>
       <source>Done</source>
       <translation>Bitti</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="545"/>
+      <location filename="../../main.py" line="541"/>
       <source>All Done! Output zip is {new_zip}</source>
       <translation>İşlem tamamlandı! Çıkış zipi {new_zip}</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="545"/>
+      <location filename="../../main.py" line="541"/>
       <source>Show in folder</source>
       <translation>Klasörde göster</translation>
     </message>
@@ -472,7 +472,7 @@ p, li { white-space: pre-wrap; }
   <context>
     <name>Status Box</name>
     <message>
-      <location filename="../../main.py" line="555"/>
+      <location filename="../../main.py" line="551"/>
       <source>Ready</source>
       <translation>Hazır</translation>
     </message>
@@ -497,27 +497,17 @@ p, li { white-space: pre-wrap; }
       <translation>{process} işine başlanıyor</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="505"/>
-      <source>Detected {firmware_creator.type.name} device</source>
-      <translation>{firmware_creator.type.name} cihazı algılandı</translation>
-    </message>
-    <message>
-      <location filename="../../main.py" line="509"/>
-      <source>Unzipping MIUI... ({firmware_creator.type.name}) device</source>
-      <translation>({firmware_creator.type.name}) cihazı için MIUI dosyaları çıkarılıyor</translation>
-    </message>
-    <message>
-      <location filename="../../main.py" line="524"/>
+      <location filename="../../main.py" line="520"/>
       <source>Error: Unsupported operation for MTK!</source>
       <translation>Hata: MTK cihazlar için desteklenmeyen işlem!</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="533"/>
+      <location filename="../../main.py" line="529"/>
       <source>Generating updater-script...</source>
       <translation>updater-script oluşturuluyor...</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="538"/>
+      <location filename="../../main.py" line="534"/>
       <source>Creating zip..</source>
       <translation>Zip oluşturuluyor..</translation>
     </message>
@@ -525,6 +515,11 @@ p, li { white-space: pre-wrap; }
       <location filename="../../components/drop_space.py" line="47"/>
       <source>File {cls.filename} is selected</source>
       <translation>{cls.filename} seçildi</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="505"/>
+      <source>Unzipping MIUI ROM...</source>
+      <translation>MIUI ROM zipten çıkarılıyor...</translation>
     </message>
   </context>
   <context>

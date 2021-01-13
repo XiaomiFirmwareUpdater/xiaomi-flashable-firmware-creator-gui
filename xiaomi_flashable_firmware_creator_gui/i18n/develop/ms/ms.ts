@@ -388,7 +388,7 @@ p, li { white-space: pre-wrap; }
   <context>
     <name>Popup Message</name>
     <message>
-      <location filename="../../main.py" line="519"/>
+      <location filename="../../main.py" line="515"/>
       <source>Error</source>
       <translation type="unfinished">Error</translation>
     </message>
@@ -398,7 +398,7 @@ p, li { white-space: pre-wrap; }
       <translation>URL tidak sah.</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="545"/>
+      <location filename="../../main.py" line="541"/>
       <source>OK</source>
       <translation>Ok</translation>
     </message>
@@ -408,22 +408,22 @@ p, li { white-space: pre-wrap; }
       <translation type="unfinished">You must select a ROM zip first!</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="519"/>
+      <location filename="../../main.py" line="515"/>
       <source>Unsupported operation for MTK!</source>
       <translation>Operasi tidak menyokong untuk MTK!</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="545"/>
+      <location filename="../../main.py" line="541"/>
       <source>Done</source>
       <translation type="unfinished">Done</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="545"/>
+      <location filename="../../main.py" line="541"/>
       <source>All Done! Output zip is {new_zip}</source>
       <translation>Berjaya! Hasil zip adalah {zip_baru}</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="545"/>
+      <location filename="../../main.py" line="541"/>
       <source>Show in folder</source>
       <translation>Tunjuk di dalam fail</translation>
     </message>
@@ -472,7 +472,7 @@ p, li { white-space: pre-wrap; }
   <context>
     <name>Status Box</name>
     <message>
-      <location filename="../../main.py" line="555"/>
+      <location filename="../../main.py" line="551"/>
       <source>Ready</source>
       <translation>Sedia</translation>
     </message>
@@ -497,27 +497,17 @@ p, li { white-space: pre-wrap; }
       <translation type="unfinished">Starting {process} job</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="505"/>
-      <source>Detected {firmware_creator.type.name} device</source>
-      <translation type="unfinished">Detected {firmware_creator.type.name} device</translation>
-    </message>
-    <message>
-      <location filename="../../main.py" line="509"/>
-      <source>Unzipping MIUI... ({firmware_creator.type.name}) device</source>
-      <translation type="unfinished">Unzipping MIUI... ({firmware_creator.type.name}) device</translation>
-    </message>
-    <message>
-      <location filename="../../main.py" line="524"/>
+      <location filename="../../main.py" line="520"/>
       <source>Error: Unsupported operation for MTK!</source>
       <translation type="unfinished">Error: Unsupported operation for MTK!</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="533"/>
+      <location filename="../../main.py" line="529"/>
       <source>Generating updater-script...</source>
       <translation type="unfinished">Generating updater-script...</translation>
     </message>
     <message>
-      <location filename="../../main.py" line="538"/>
+      <location filename="../../main.py" line="534"/>
       <source>Creating zip..</source>
       <translation type="unfinished">Creating zip..</translation>
     </message>
@@ -525,6 +515,11 @@ p, li { white-space: pre-wrap; }
       <location filename="../../components/drop_space.py" line="47"/>
       <source>File {cls.filename} is selected</source>
       <translation type="unfinished">File {cls.filename} is selected</translation>
+    </message>
+    <message>
+      <location filename="../../main.py" line="505"/>
+      <source>Unzipping MIUI ROM...</source>
+      <translation>Menyahzip ROM MIUI...</translation>
     </message>
   </context>
   <context>
