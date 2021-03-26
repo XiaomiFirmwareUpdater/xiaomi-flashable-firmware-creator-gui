@@ -49,5 +49,5 @@ pip3 install .
 *   Run the tool.
 
 ```shell script
-xiaomi_flashable_firmware_creator_gui
+xiaomi_flashable_firmware_creator_g
 ```
