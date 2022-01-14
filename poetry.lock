@@ -125,7 +125,7 @@ brotli = ["brotlipy (>=0.6.0)"]
 
 [[package]]
 name = "xiaomi-flashable-firmware-creator"
-version = "2.2.3"
+version = "2.2.4"
 description = "Create flashable firmware zip from MIUI Recovery ROMs!"
 category = "main"
 optional = false
@@ -138,7 +138,7 @@ remotezip = ">=0.9.2,<0.10.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "1a2e8c1704656604a9fe624e9084800908eea4b24fda9c90a07bd1d3eedd9931"
+content-hash = "9bc392c73464b8d19370688fefecc7324974dfedd87e7b1cf3fd50f52b917653"
 
 [metadata.files]
 certifi = [
@@ -233,6 +233,6 @@ urllib3 = [
     {file = "urllib3-1.26.4.tar.gz", hash = "sha256:e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937"},
 ]
 xiaomi-flashable-firmware-creator = [
-    {file = "xiaomi_flashable_firmware_creator-2.2.3-py3-none-any.whl", hash = "sha256:30137c346bba88901953ec26da51878a6ecc7feaeb05f9d61d9714c687a3671d"},
-    {file = "xiaomi_flashable_firmware_creator-2.2.3.tar.gz", hash = "sha256:3ed606de727ad47c1f5ca00fc77e81f4392e7b031948d2267f29b821a9bf6e43"},
+    {file = "xiaomi_flashable_firmware_creator-2.2.4-py3-none-any.whl", hash = "sha256:98cc27913f1cc039606cdd48810c90b3780dd3e0ad2dca781ca4b13e1e387807"},
+    {file = "xiaomi_flashable_firmware_creator-2.2.4.tar.gz", hash = "sha256:db64d9420aefd8de5233da435dafb70dd31941976732f4126c8998cddbbf81e1"},
 ]
