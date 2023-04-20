@@ -507,8 +507,9 @@ class MainWindowUi(QMainWindow):
         self.progress_bar.setValue(20)
         logging.info(f'Unzipping {self.filename}')
         extracted = False
+        invalid_files = set()
         try:
-            firmware_creator.extract()
+            _, invalid_files = firmware_creator.extract()
             extracted = True
         except RuntimeError as err:
             if str(err) == "Nothing found to extract!":
@@ -530,7 +531,7 @@ class MainWindowUi(QMainWindow):
                 self._translate("Status Box", "Generating updater-script..."))
             self.progress_bar.setValue(55)
             logging.info(f'Creating updater-script')
-            firmware_creator.generate_updater_script()
+            firmware_creator.generate_updater_script(invalid_files)
             self.status_box.setText(self._translate("Status Box", "Creating zip.."))
             self.progress_bar.setValue(75)
             logging.info(f'Creating output zip')
