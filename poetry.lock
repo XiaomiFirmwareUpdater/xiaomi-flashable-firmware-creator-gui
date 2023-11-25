@@ -2,13 +2,13 @@
 
 [[package]]
 name = "certifi"
-version = "2023.7.22"
+version = "2023.11.17"
 description = "Python package for providing Mozilla's CA Bundle."
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "certifi-2023.7.22-py3-none-any.whl", hash = "sha256:92d6037539857d8206b8f6ae472e8b77db8058fec5937a1ef3f54304089edbb9"},
-    {file = "certifi-2023.7.22.tar.gz", hash = "sha256:539cc1d13202e33ca466e88b2807e29f4c13049d6d87031a3c110744495cb082"},
+    {file = "certifi-2023.11.17-py3-none-any.whl", hash = "sha256:e036ab49d5b79556f99cfc2d9320b34cfbe5be05c5871b51de9329f0603b0474"},
+    {file = "certifi-2023.11.17.tar.gz", hash = "sha256:9b469f3a900bf28dc19b8cfbf8019bf47f7fdd1a65a1d4ffb98fc14166beb4d1"},
 ]
 
 [[package]]
@@ -112,13 +112,13 @@ files = [
 
 [[package]]
 name = "idna"
-version = "3.4"
+version = "3.5"
 description = "Internationalized Domain Names in Applications (IDNA)"
 optional = false
 python-versions = ">=3.5"
 files = [
-    {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
-    {file = "idna-3.4.tar.gz", hash = "sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"},
+    {file = "idna-3.5-py3-none-any.whl", hash = "sha256:79b8f0ac92d2351be5f6122356c9a592c96d81c9a79e4b488bf2a6a15f88057a"},
+    {file = "idna-3.5.tar.gz", hash = "sha256:27009fe2735bf8723353582d48575b23c533cc2c2de7b5a68908d91b5eb18d08"},
 ]
 
 [[package]]
@@ -178,6 +178,7 @@ description = "The subset of a Qt installation needed by PyQt5."
 optional = false
 python-versions = "*"
 files = [
+    {file = "PyQt5_Qt5-5.15.11-1-py3-none-macosx_11_0_arm64.whl", hash = "sha256:9bb0d816de8c003ce41881e39fe5d64c2cdf5e8ca96b6c016c34f8e0bdc30768"},
     {file = "PyQt5_Qt5-5.15.11-py3-none-macosx_10_13_x86_64.whl", hash = "sha256:109c418d221538751e4d7755a81c978ee31abbd65facb3f1f361dca74a1b758a"},
     {file = "PyQt5_Qt5-5.15.11-py3-none-macosx_11_0_arm64.whl", hash = "sha256:3cccb21942eb49d21fb0193f28e3e8ae3d35395f158e8a9d4d58e23efa3a2ea7"},
 ]
