@@ -1,43 +1,43 @@
-[tool.poetry]
+[project]
 name = "xiaomi_flashable_firmware_creator_gui"
-version = "2.3.17"
-description = "Create flashable firmware zip from MIUI Recovery ROMs!"
-authors = ["yshalsager <ysh-alsager@hotmail.com>"]
-license = "GPL-3.0-only"
+version = "2.3.18"
+description = "Create flashable firmware zip from MIUI Recovery and HyperOS ROMs!"
+authors = [{ name = "yshalsager", email = "contact@yshalsager.com" }]
+license = { file = "LICENSE" }
 repository = "https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator-gui/"
-homepage = "https://xiaomifirmwareupdater.com/projects/xiaomi-flashable-firmware-creator/"
+homepage = "https://xmfirmwareupdater.com/projects/xiaomi-flashable-firmware-creator/"
 keywords = ["xiaomi", "firmware", "android"]
-packages = [
-    { include = "xiaomi_flashable_firmware_creator_gui" }
-]
-include = [
-    "README.md",
-    "pyproject.toml"
-]
-exclude = ["xiaomi_flashable_firmware_creator_gui/i18n/develop"]
 readme = "README.md"
+requires-python = ">=3.12"
 
-[tool.poetry.scripts]
+dependencies = [
+    "pyqt5>=5.15.11",
+    "xiaomi-flashable-firmware-creator>=2.2.14",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.7.1",
+]
+
+[project.scripts]
 xiaomi_flashable_firmware_creator_g = "xiaomi_flashable_firmware_creator_gui.main:main"
 
-[tool.poetry.dependencies]
-python = "^3.10"
-PyQt5 = "^5.15.2"
-xiaomi_flashable_firmware_creator = "^2.2.13"
-
-[tool.poetry.dev-dependencies]
-
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.pylint.messages_control]
-disable = [
-    "invalid-name",
-    "too-many-arguments",
-    "too-many-statements",
-    "too-many-instance-attributes",
-    "logging-fstring-interpolation",
-    "f-string-without-interpolation"
-]
-extension-pkg-whitelist = "PyQt5"
+[tool.hatch.build.targets.sdist]
+only-include = ["xiaomi_flashable_firmware_creator_gui", "pyproject.toml", "README.md"]
+exclude = ["xiaomi_flashable_firmware_creator_gui/i18n/develop"]
+
+[tool.ruff]
+fix = true
+src = ["xiaomi_flashable_firmware_creator_gui"]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+line-ending = "lf"
