@@ -1,4 +1,5 @@
 """Layout altering functions."""
+
 from PyQt5.QtCore import Qt
 
 

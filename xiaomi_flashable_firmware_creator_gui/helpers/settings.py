@@ -18,7 +18,7 @@ def load_settings() -> dict:
             settings = json.load(json_file)
     except FileNotFoundError:
         locale = getdefaultlocale()[0]
-        settings = dict({"language": locale})
+        settings = dict({'language': locale})
         update_settings(settings)
     return settings
 

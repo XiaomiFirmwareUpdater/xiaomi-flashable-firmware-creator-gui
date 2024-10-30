@@ -10,6 +10,7 @@ class DropSpace(QGroupBox):
     """
     A modified Groupbox to allow drag and drop.
     """
+
     status_box = None
     parent = None
     _translate = None
@@ -28,8 +29,7 @@ class DropSpace(QGroupBox):
         Override default dragEnterEvent
         Allows dragging zip files only
         """
-        file_type = QMimeDatabase().mimeTypeForFile(
-            file.mimeData().urls()[0].toLocalFile()).name()
+        file_type = QMimeDatabase().mimeTypeForFile(file.mimeData().urls()[0].toLocalFile()).name()
         if file_type == 'application/zip':
             file.accept()
         else:
@@ -44,4 +44,4 @@ class DropSpace(QGroupBox):
         filepath = file.mimeData().urls()[0].toLocalFile()
         cls.filepath = Path(filepath).absolute()
         cls.filename = cls.filepath.name
-        cls.status_box.setText(cls._translate("Status Box", f"File {cls.filename} is selected"))
+        cls.status_box.setText(cls._translate('Status Box', f'File {cls.filename} is selected'))

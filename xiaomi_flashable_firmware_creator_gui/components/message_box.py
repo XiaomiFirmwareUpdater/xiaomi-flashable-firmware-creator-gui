@@ -1,4 +1,5 @@
 """Custom QMessageBox classes."""
+
 from pathlib import Path
 
 from PyQt5.QtWidgets import QMessageBox, QPushButton
@@ -7,15 +8,15 @@ from PyQt5.QtWidgets import QMessageBox, QPushButton
 class MessageBox(QMessageBox):
     """Custom QMessage class to allow setting localized buttons text."""
 
-    def __init__(self, title, message, ok_text, box_type="Warning", parent=None):
+    def __init__(self, title, message, ok_text, box_type='Warning', parent=None):
         self.title = title
         self.message = message
         self.ok_text = ok_text
         self.box_type = box_type
         super().__init__(parent)
-        if self.box_type == "Warning":
+        if self.box_type == 'Warning':
             self.setIcon(QMessageBox.Warning)
-        elif self.box_type == "Critical":
+        elif self.box_type == 'Critical':
             self.setIcon(QMessageBox.Critical)
         else:
             self.setIcon(QMessageBox.Information)
@@ -37,7 +38,7 @@ class OutputMessageBox(MessageBox):
     filepath: Path
     browse_text: str
 
-    def __init__(self, title, message, ok_text, browse_text, filepath, box_type="", parent=None):
+    def __init__(self, title, message, ok_text, browse_text, filepath, box_type='', parent=None):
         self.browse_text = browse_text
         self.filepath = filepath
         super().__init__(title, message, ok_text, box_type, parent)

@@ -1,4 +1,5 @@
 """Custom QInputDialog class"""
+
 from PyQt5.QtWidgets import QInputDialog
 
 
