@@ -8,6 +8,7 @@
     ":enablePreCommit",
     // https://docs.renovatebot.com/presets-default/#rebasestaleprs
     ":rebaseStalePrs",
+    "group:allNonMajor",
   ],
 
   // https://docs.renovatebot.com/configuration-options/#labels
