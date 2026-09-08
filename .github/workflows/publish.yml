@@ -1,0 +1,36 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      - uses: astral-sh/setup-uv@v10
+      - name: Verify tag
+        run: test "$GITHUB_REF_NAME" = "v$(uv version --short)"
+      - name: Build
+        run: uv build
+      - name: Smoke test wheel
+        run: uv run --isolated --no-project --with dist/*.whl python -c 'from xiaomi_flashable_firmware_creator.firmware_creator import FlashableFirmwareCreator; import xiaomi_flashable_firmware_creator_gui.main; assert hasattr(FlashableFirmwareCreator, "generate_flashing_script")'
+      - name: Smoke test source distribution
+        run: uv run --isolated --no-project --with dist/*.tar.gz python -c 'from xiaomi_flashable_firmware_creator.firmware_creator import FlashableFirmwareCreator; import xiaomi_flashable_firmware_creator_gui.main; assert hasattr(FlashableFirmwareCreator, "generate_flashing_script")'
+      - name: Publish
+        run: uv publish
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: dist/*
+          generate_release_notes: true
