@@ -579,7 +579,7 @@ class MainWindowUi(QMainWindow):
             self.status_box.setText(self._translate('Status Box', 'Generating updater-script...'))
             self.progress_bar.setValue(55)
             logging.info(f'Creating updater-script')
-            firmware_creator.generate_updater_script(invalid_files)
+            firmware_creator.generate_flashing_script(invalid_files)
             self.status_box.setText(self._translate('Status Box', 'Creating zip..'))
             self.progress_bar.setValue(75)
             logging.info(f'Creating output zip')
