@@ -245,19 +245,19 @@ wheels = [
 
 [[package]]
 name = "xiaomi-flashable-firmware-creator"
-version = "2.3.3"
+version = "2.3.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "remotezip" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/18/ec/f17659171381ab7d678544e88c66ea75b786ed1af852d9f3bd42bf838d8d/xiaomi_flashable_firmware_creator-2.3.3.tar.gz", hash = "sha256:a05647dd1a93d4db29361dc04bfee5bd8695a802761340d63004af8f3398120e", size = 132476, upload-time = "2026-09-08T11:59:47.294Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/05/55/c6c9c6eb34e20da24c5d5010af9fd397f5d9cf2a9d8f703bed00aa047426/xiaomi_flashable_firmware_creator-2.3.4.tar.gz", hash = "sha256:29c3981623e2d2a5cfbedd08a42a5d987ce667226a8118dc4738384ec3c918ce", size = 134370, upload-time = "2026-11-15T14:06:16.463Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9e/3b/7b1cade6c8de86cd375165844df67f5addb7a7171f3e8cef00254eec8707/xiaomi_flashable_firmware_creator-2.3.3-py3-none-any.whl", hash = "sha256:e476d7ce62b30b876819ebd44420726d937929ef09f9ccd731acda8bb855c2c7", size = 155072, upload-time = "2026-09-08T11:59:45.938Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/39/b76d3a6fc474adc6a8ef13c2cf057f141b79056bf9baf585fdab13b2d48a/xiaomi_flashable_firmware_creator-2.3.4-py3-none-any.whl", hash = "sha256:7092899a01d2b85e924fdb78c2905bceefb4871f522d3ab0df045cc7fb765c62", size = 155073, upload-time = "2026-11-15T14:06:15.4Z" },
 ]
 
 [[package]]
 name = "xiaomi-flashable-firmware-creator-gui"
-version = "2.3.19"
+version = "2.3.20"
 source = { editable = "." }
 dependencies = [
     { name = "pyqt5" },
@@ -272,7 +272,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "pyqt5", specifier = ">=5.15.11" },
-    { name = "xiaomi-flashable-firmware-creator", specifier = ">=2.3.3" },
+    { name = "xiaomi-flashable-firmware-creator", specifier = ">=2.3.4" },
 ]
 
 [package.metadata.requires-dev]
